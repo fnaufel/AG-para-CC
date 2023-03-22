@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Fernando Náufel">
 
-<title>Álgebra Geométrica para Ciência da Computação</title>
+<title>Álgebra Geométrica para Ciência da Computação - 2&nbsp; Rascunho e testes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -31,7 +49,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./references.html" rel="next">
+<link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Álgebra Geométrica para Ciência da Computação</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Rascunho e testes</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -100,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Prefácio</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Prefácio</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -110,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./scratch.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Rascunho e testes</span></a>
+  <a href="./scratch.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Rascunho e testes</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -127,35 +146,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#prefácio" id="toc-prefácio" class="nav-link active" data-scroll-target="#prefácio">Prefácio</a></li>
+  <li><a href="#testando-bib" id="toc-testando-bib" class="nav-link active" data-scroll-target="#testando-bib"><span class="toc-section-number">2.1</span>  Testando bib</a></li>
+  <li><a href="#testando-crossref" id="toc-testando-crossref" class="nav-link" data-scroll-target="#testando-crossref"><span class="toc-section-number">2.2</span>  Testando crossref</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/fnaufel/AG-para-CC/edit/main/index.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/fnaufel/AG-para-CC/edit/main/scratch.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Álgebra Geométrica para Ciência da Computação</h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Rascunho e testes</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Fernando Náufel </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">22/03/2023</p>
-    </div>
-  </div>
   
     
   </div>
@@ -163,11 +171,20 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="prefácio" class="level1 unnumbered">
-<h1 class="unnumbered">Prefácio</h1>
-<p>???</p>
+<section id="testando-bib" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="testando-bib"><span class="header-section-number">2.1</span> Testando bib</h2>
+<p>Uma citação: <span class="citation" data-cites="gunn19:_cours_geomet_algeb_comput_graph_siggr">(<a href="references.html#ref-gunn19:_cours_geomet_algeb_comput_graph_siggr" role="doc-biblioref">Gunn 2019</a>)</span> são as course notes.</p>
+</section>
+<section id="testando-crossref" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="testando-crossref"><span class="header-section-number">2.2</span> Testando crossref</h2>
+<p>Ver <a href="intro.html"><span>Chapter&nbsp;1</span></a> para a introdução. É o <a href="intro.html">capítulo&nbsp;<span>1</span></a>.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-gunn19:_cours_geomet_algeb_comput_graph_siggr" class="csl-entry" role="doc-biblioentry">
+Gunn, Charles. 2019. <span>“Course Notes Geometric Algebra for Computer Graphics * SIGGRAPH 2019.”</span> <a href="https://doi.org/10.1145/3305366.3328099">https://doi.org/10.1145/3305366.3328099</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -306,10 +323,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">Referências</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

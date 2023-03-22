@@ -1,0 +1,10 @@
+# Rascunho e testes
+
+## Testando bib
+
+Uma citação: [@gunn19:_cours_geomet_algeb_comput_graph_siggr] são as course notes.
+
+## Testando crossref
+
+Ver @sec-intro para a introdução. É o [capítulo -@sec-intro].
+

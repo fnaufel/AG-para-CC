@@ -4,13 +4,34 @@
     "href": "intro.html",
     "title": "1  Introdução",
     "section": "",
-    "text": "…"
+    "text": "???"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Álgebra Geométrica para Ciência da Computação",
     "section": "",
-    "text": "Prefácio\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+    "text": "Prefácio\n???"
+  },
+  {
+    "objectID": "scratch.html#testando-bib",
+    "href": "scratch.html#testando-bib",
+    "title": "2  Rascunho e testes",
+    "section": "2.1 Testando bib",
+    "text": "2.1 Testando bib\nUma citação: (Gunn 2019) são as course notes."
+  },
+  {
+    "objectID": "scratch.html#testando-crossref",
+    "href": "scratch.html#testando-crossref",
+    "title": "2  Rascunho e testes",
+    "section": "2.2 Testando crossref",
+    "text": "2.2 Testando crossref\nVer Chapter 1 para a introdução. É o capítulo 1.\n\n\n\n\nGunn, Charles. 2019. “Course Notes Geometric Algebra for Computer Graphics * SIGGRAPH 2019.” https://doi.org/10.1145/3305366.3328099."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Referências",
+    "section": "",
+    "text": "Gunn, Charles. 2019. “Course Notes Geometric Algebra for Computer\nGraphics * SIGGRAPH 2019.” https://doi.org/10.1145/3305366.3328099."
   }
 ]

@@ -10,12 +10,15 @@ book:
   repo-url: https://github.com/fnaufel/AG-para-CC
   repo-actions: [edit]
   downloads: [pdf]
+  language: "pt-BR"
+  date-format: "DD/MM/YYYY"
   chapters:
     - index.qmd
     - intro.qmd
+    - scratch.qmd
     - references.qmd
 
-bibliography: "/home/fnaufel/Documents/OrgFiles/bibliography.bib"
+bibliography: bibliography.bib
 
 comments:
   hypothesis: true
