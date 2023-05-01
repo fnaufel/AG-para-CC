@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introdução",
-    "section": "",
-    "text": "???"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Álgebra Geométrica para Ciência da Computação",
@@ -14,24 +7,115 @@
     "text": "Prefácio\n???"
   },
   {
-    "objectID": "scratch.html#testando-bib",
-    "href": "scratch.html#testando-bib",
-    "title": "2  Rascunho e testes",
-    "section": "2.1 Testando bib",
-    "text": "2.1 Testando bib\nUma citação: (Gunn 2019) são as course notes."
-  },
-  {
-    "objectID": "scratch.html#testando-crossref",
-    "href": "scratch.html#testando-crossref",
-    "title": "2  Rascunho e testes",
-    "section": "2.2 Testando crossref",
-    "text": "2.2 Testando crossref\nVer Chapter 1 para a introdução. É o capítulo 1.\n\n\n\n\nGunn, Charles. 2019. “Course Notes Geometric Algebra for Computer Graphics * SIGGRAPH 2019.” https://doi.org/10.1145/3305366.3328099."
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "Referências",
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introdução",
     "section": "",
-    "text": "Gunn, Charles. 2019. “Course Notes Geometric Algebra for Computer\nGraphics * SIGGRAPH 2019.” https://doi.org/10.1145/3305366.3328099."
+    "text": "???"
+  },
+  {
+    "objectID": "intro.html#referências",
+    "href": "intro.html#referências",
+    "title": "1  Introdução",
+    "section": "1.1 Referências",
+    "text": "1.1 Referências\n???\nLivros em português e em inglês\nSites\nPlaylists\n???"
+  },
+  {
+    "objectID": "prod-externo.html#sec-vetores-r2",
+    "href": "prod-externo.html#sec-vetores-r2",
+    "title": "2  O produto externo",
+    "section": "2.1 Vetores em \\(\\mathbb{R}^2\\)",
+    "text": "2.1 Vetores em \\(\\mathbb{R}^2\\)\n\nVamos trabalhar no espaço vetorial \\(\\mathbb{R}^2\\).\nOs elementos de \\(\\mathbb{R}^2\\) são vetores com duas coordenadas; por exemplo:\n\\[\n\\begin{array}{l}\n  \\mathbf{v} = (-1, 3)\\\\\n  \\mathbf{w} = \\left( \\frac12, \\frac{\\sqrt{2}}{2} \\right)\n\\end{array}\n\\]\n\n\n\n\n\n\n\nNotação: vetores em negrito\n\n\n\nVocê deve estar acostumado a escrever nomes de vetores como \\(\\vec v\\), \\(\\vec w\\) etc.\nNeste livro, como na maioria dos livros sobre álgebra geométrica, nomes de vetores serão escritos em negrito: \\(\\mathbf{v}\\), \\(\\mathbf{w}\\).\n\n\n\nUsando a base canônica de \\(\\mathbb{R}^2\\), com \\(\\mathbf{e}_{1} = (1, 0)\\) e \\(\\mathbf{e}_{2} = (0, 1)\\), os vetores do exemplo acima podem ser escritos como\n\\[\n\\begin{array}{l}\n  \\mathbf{v} = -1\\mathbf{e}_{1} + 3\\mathbf{e}_{2}\\\\\n  \\mathbf{w} = \\frac12 \\mathbf{e}_{1} + \\frac{\\sqrt{2}}{2}\\mathbf{e}_{2}\n\\end{array}\n\\]\nTecnicamente, estamos escrevendo cada vetor como uma combinação linear dos vetores da base \\(\\{ \\mathbf{e}_{1}, \\mathbf{e}_{2} \\}\\).\n\n\n\n\n\n\n\nNotação: vetores como combinações lineares dos vetores da base\n\n\n\nComo na maioria dos livros sobre álgebra geométrica, em vez de escrevermos \\[\n\\mathbf{v} = (x, y)\n\\] vamos escrever \\[\n\\mathbf{v} = x\\mathbf{e}_{1} + y\\mathbf{e}_{2}\n\\]\nSe uma das coordenadas for zero, podemos omitir o vetor da base correspondente. Por exemplo, vamos escrever o vetor \\[\n\\mathbf{u} = (0, 3)\n\\] como \\[\n\\mathbf{u} = 3\\mathbf{e}_{2}\n\\]\n\n\n\nPara lembrar que estamos trabalhando com \\(\\mathbf{e}_{1}\\) e com \\(\\mathbf{e}_{2}\\), vamos rotular os eixos \\(x\\) e \\(y\\) dos nossos gráficos com os nomes destes dois vetores, como na Figura 2.1.\nMas você deve se lembrar que \\(\\mathbf{e}_{1}\\) e \\(\\mathbf{e}_{2}\\) representam os dois vetores unitários da figura, e não os eixos orientados (que são infinitos).\n\n\n\nFigura 2.1: Vetores da base canônica e eixos\n\n\nPara acompanhar o restante deste capítulo, você deve revisar os seguintes tópicos sobre vetores, especialmente em \\(\\mathbb{R}^2\\) e em \\(\\mathbb{R}^3\\):\n\nAdição de vetores,\nMultiplicação de vetor por escalar (nossos escalares vão ser números reais),\nVetor nulo,\nVetor inverso (para a adição),\nDependência e independência linear,\nMódulo (norma) de um vetor,\nProduto vetorial,\nSubespaços vetoriais."
+  },
+  {
+    "objectID": "prod-externo.html#retas-em-mathbbr2",
+    "href": "prod-externo.html#retas-em-mathbbr2",
+    "title": "2  O produto externo",
+    "section": "2.2 Retas em \\(\\mathbb{R}^2\\)",
+    "text": "2.2 Retas em \\(\\mathbb{R}^2\\)\n\nPor enquanto, só temos vetores.\nCada vetor (diferente de \\(\\mathbf{0}\\), o vetor nulo) indica uma direção.\nMas apenas uma direção não basta para definir uma reta. Por exemplo, todas as retas da Figura 2.2 têm a mesma direção: a direção dada pelo vetor \\(\\mathbf{v} = \\mathbf{e}_{1} + 2\\mathbf{e}_{2}\\).\n\n\n\nFigura 2.2: Retas e vetores\n\n\nVamos combinar que todas as nossas retas de interesse passam pela origem — ou seja, pelo ponto \\(O=(0,0)\\).\nFazendo isto, cada vetor determina uma única reta.\nChamamos as retas que passam pela origem de retas homogêneas. Na Figura 2.2, só há uma reta homogênea (a reta \\(r\\)).\nMas, além de uma direção, um vetor também um sentido.\nNa Figura 2.2, o vetor \\(\\mathbf{w} = -\\mathbf{e}_{1} - 2\\mathbf{e}_{2}\\) tem a mesma direção da reta \\(r\\), mas seu sentido é oposto ao sentido do vetor \\(\\mathbf{v}\\).\nEntão, qual dos dois vetores \\(\\mathbf{v}\\) e \\(\\mathbf{w}\\) representa a reta \\(r\\)?\nVamos decidir esta questão do seguinte modo: nossas retas também vão ter um sentido. Ou seja, vamos trabalhar com retas orientadas.\nNa Figura 2.2, então, os vetores \\(\\mathbf{v}\\) e \\(\\mathbf{w}\\) representam duas retas \\(r\\) e \\(r'\\), ambas com a mesma direção, mas com sentidos opostos.\nMas, além de direção e sentido, um vetor também tem um comprimento (ou magnitude, ou módulo, ou norma).\nNa Figura 2.3, os \\(3\\) vetores \\(\\mathbf{v}_1, \\mathbf{v}_2\\) e \\(\\mathbf{v}_3\\) têm a mesma direção e sentido que a reta \\(r\\).\n\n\n\nFigura 2.3: Vetores de magnitudes diferentes\n\n\nDe novo, vamos combinar que cada um destes vetores define uma reta diferente, todas as retas com a mesma direção e sentido, mas cada reta com uma magnitude (ou peso) diferente.\nVocê pode imaginar o peso de uma reta como a velocidade com que um ponto percorre a reta, ou como a velocidade com que a reta avança na direção e no sentido especificados pelo vetor.\n\n\n\n\n\n\n\nResumindo: vetores \\(=\\) retas homogêneas orientadas e com peso\n\n\n\nUm vetor \\[\n\\mathbf{v} = a\\mathbf{e}_{1} + b\\mathbf{e}_{2}\n\\] (com \\(a, b \\in \\mathbb{R}\\), e com pelo menos um dentre \\(a\\) e \\(b\\) diferente de zero) representa uma reta homogênea orientada, com a direção e o sentido de \\(\\mathbf{v}\\), e com peso igual à norma de \\(\\mathbf{v}\\): \\[\n||\\mathbf{v}|| = \\sqrt{a^2 + b^2}\n\\]"
+  },
+  {
+    "objectID": "prod-externo.html#vetores-e-retas-em-mathbbr3",
+    "href": "prod-externo.html#vetores-e-retas-em-mathbbr3",
+    "title": "2  O produto externo",
+    "section": "2.3 Vetores e retas em \\(\\mathbb{R}^3\\)",
+    "text": "2.3 Vetores e retas em \\(\\mathbb{R}^3\\)\n\nTudo que falamos acima sobre vetores e retas em \\(\\mathbb{R}^2\\) se aplica a vetores e retas em \\(\\mathbb{R}^3\\), com as seguintes alterações:\n\nA base canônica agora é \\(\\{ \\mathbf{e}_{1}, \\mathbf{e}_{2}, \\mathbf{e}_{3} \\}\\), onde os vetores correspondem aos eixos \\(x\\), \\(y\\) e \\(z\\), respectivamente.\nLogo, um vetor em \\(\\mathbb{R}^3\\) é escrito como \\(\\mathbf{v} = x\\mathbf{e}_{1} + y\\mathbf{e}_{2} + z\\mathbf{e}_{3}\\), com \\(x, y, z \\in \\mathbb{R}\\).\nCada vetor \\(\\mathbf{v} = a\\mathbf{e}_{1} + b\\mathbf{e}_{2} + c\\mathbf{e}_{3}\\) (com \\(a, b, c \\in \\mathbb{R}\\), e com pelo menos um dentre \\(a\\), \\(b\\) e \\(c\\) diferente de zero) representa uma reta homogênea orientada, com a direção e o sentido de \\(\\mathbf{v}\\), e com peso igual à norma de \\(\\mathbf{v}\\): \\[\n||\\mathbf{v}|| = \\sqrt{a^2 + b^2 + c^2}\n\\]\n\nA Figura 2.4 mostra um exemplo.\n\n\n\nFigura 2.4: Vetor e reta em \\(\\mathbb{R}^3\\)"
+  },
+  {
+    "objectID": "prod-externo.html#bivetores-e-planos-em-mathbbr3",
+    "href": "prod-externo.html#bivetores-e-planos-em-mathbbr3",
+    "title": "2  O produto externo",
+    "section": "2.4 Bivetores e planos em \\(\\mathbb{R}^3\\)",
+    "text": "2.4 Bivetores e planos em \\(\\mathbb{R}^3\\)"
+  },
+  {
+    "objectID": "prod-externo.html#bivetores-em-mathbbr2",
+    "href": "prod-externo.html#bivetores-em-mathbbr2",
+    "title": "2  O produto externo",
+    "section": "2.5 Bivetores em \\(\\mathbb{R}^2\\)?",
+    "text": "2.5 Bivetores em \\(\\mathbb{R}^2\\)?"
+  },
+  {
+    "objectID": "prod-externo.html#trivetores-em-mathbbr3",
+    "href": "prod-externo.html#trivetores-em-mathbbr3",
+    "title": "2  O produto externo",
+    "section": "2.6 Trivetores em \\(\\mathbb{R}^3\\)",
+    "text": "2.6 Trivetores em \\(\\mathbb{R}^3\\)"
+  },
+  {
+    "objectID": "prod-externo.html#n-1-vetores-em-mathbbrn",
+    "href": "prod-externo.html#n-1-vetores-em-mathbbrn",
+    "title": "2  O produto externo",
+    "section": "2.7 \\(n + 1\\)-vetores em \\(\\mathbb{R}^n\\)?",
+    "text": "2.7 \\(n + 1\\)-vetores em \\(\\mathbb{R}^n\\)?"
+  },
+  {
+    "objectID": "prod-externo.html#propriedades-do-produto-externo",
+    "href": "prod-externo.html#propriedades-do-produto-externo",
+    "title": "2  O produto externo",
+    "section": "2.8 Propriedades do produto externo",
+    "text": "2.8 Propriedades do produto externo"
+  },
+  {
+    "objectID": "prod-externo.html#resolvendo-problemas-com-wedge",
+    "href": "prod-externo.html#resolvendo-problemas-com-wedge",
+    "title": "2  O produto externo",
+    "section": "2.9 Resolvendo problemas com \\(\\wedge\\)",
+    "text": "2.9 Resolvendo problemas com \\(\\wedge\\)"
+  },
+  {
+    "objectID": "prod-externo.html#representando-subespaços-homogêneos-orientados-e-com-peso",
+    "href": "prod-externo.html#representando-subespaços-homogêneos-orientados-e-com-peso",
+    "title": "2  O produto externo",
+    "section": "2.10 Representando subespaços homogêneos orientados e com peso",
+    "text": "2.10 Representando subespaços homogêneos orientados e com peso"
+  },
+  {
+    "objectID": "prod-externo.html#blades",
+    "href": "prod-externo.html#blades",
+    "title": "2  O produto externo",
+    "section": "2.11 Blades",
+    "text": "2.11 Blades"
+  },
+  {
+    "objectID": "prod-externo.html#multivetores",
+    "href": "prod-externo.html#multivetores",
+    "title": "2  O produto externo",
+    "section": "2.12 Multivetores",
+    "text": "2.12 Multivetores"
+  },
+  {
+    "objectID": "prod-externo.html#resumo",
+    "href": "prod-externo.html#resumo",
+    "title": "2  O produto externo",
+    "section": "2.13 Resumo",
+    "text": "2.13 Resumo"
+  },
+  {
+    "objectID": "prod-externo.html#exercícios",
+    "href": "prod-externo.html#exercícios",
+    "title": "2  O produto externo",
+    "section": "2.14 Exercícios",
+    "text": "2.14 Exercícios"
   }
 ]

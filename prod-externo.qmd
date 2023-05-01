@@ -1,0 +1,190 @@
+
+{{< include _math.qmd >}}
+
+# O produto externo {#sec-prod-ext}
+
+
+## Vetores em $\reais^2$ {#sec-vetores-r2}
+
+* Vamos trabalhar no espaço vetorial $\reais^2$.
+
+* Os elementos de $\reais^2$ são vetores com duas coordenadas; por exemplo:
+
+  $$
+  \begin{array}{l}
+    \vetor v = (-1, 3)\\
+    \vetor w = \left( \frac12, \frac{\sqrt{2}}{2} \right)
+  \end{array}
+  $$
+
+
+::: {.callout-warning}
+
+### Notação: vetores em negrito
+
+Você deve estar acostumado a escrever nomes de vetores como $\vec v$, $\vec w$ etc.
+
+Neste livro, como na maioria dos livros sobre álgebra geométrica, nomes de vetores serão escritos em negrito: $\vetor v$, $\vetor w$.
+
+:::
+
+
+* Usando a base canônica de $\reais^2$, com $\ve1 = (1, 0)$ e $\ve2 = (0, 1)$, os vetores do exemplo acima podem ser escritos como
+
+  $$
+  \begin{array}{l}
+    \vetor v = -1\ve1 + 3\ve2\\
+    \vetor w = \frac12 \ve1 + \frac{\sqrt{2}}{2}\ve2
+  \end{array}
+  $$
+
+* Tecnicamente, estamos escrevendo cada vetor como uma [combinação linear]{.hl} dos vetores da base $\{ \ve1, \ve2 \}$. 
+
+
+::: {.callout-warning}
+
+### Notação: vetores como combinações lineares dos vetores da base
+
+Como na maioria dos livros sobre álgebra geométrica, em vez de escrevermos
+$$
+\vetor v = (x, y)
+$$
+vamos escrever
+$$
+\vetor v = x\ve1 + y\ve2
+$$
+
+Se uma das coordenadas for zero, podemos omitir o vetor da base correspondente. Por exemplo, vamos escrever o vetor
+$$
+\vetor u = (0, 3)
+$$
+como
+$$
+\vetor u = 3\ve2
+$$
+
+:::
+
+
+* Para lembrar que estamos trabalhando com $\ve1$ e com $\ve2$, vamos rotular os eixos $x$ e $y$ dos nossos gráficos com os nomes destes dois vetores, como na @fig-e1-e2.
+
+* Mas você deve se lembrar que $\ve1$ e $\ve2$ representam os dois vetores unitários da figura, e não os eixos orientados (que são infinitos).
+
+  ![Vetores da base canônica e eixos](figures/vetores-base.png){width=70% fig-alt="Eixos e vetores da base canônica." #fig-e1-e2}
+
+* Para acompanhar o restante deste capítulo, você deve revisar os seguintes tópicos sobre vetores, especialmente em $\reais^2$ e em $\reais^3$:
+
+  * Adição de vetores,
+  * Multiplicação de vetor por escalar (nossos escalares vão ser números reais),
+  * Vetor nulo,
+  * Vetor inverso (para a adição),
+  * Dependência e independência linear,
+  * Módulo (norma) de um vetor,
+  * Produto vetorial,
+  * Subespaços vetoriais.
+  
+
+## Retas em $\reais^2$
+
+* Por enquanto, só temos vetores.
+
+* Cada vetor (diferente de $\vetor 0$, o vetor nulo) indica uma direção.
+
+* Mas apenas uma direção não basta para definir uma reta. Por exemplo, todas as retas da @fig-retas têm a mesma direção: a direção dada pelo vetor $\vetor v = \ve1 + 2\ve2$.
+
+  ![Retas e vetores](figures/reta-homogenea.png){width=80% fig-alt="Retas e vetores paralelos." #fig-retas}
+
+* Vamos combinar que [todas as nossas retas de interesse passam pela origem]{.hl} --- ou seja, pelo ponto $O=(0,0)$. 
+
+* Fazendo isto, cada vetor determina uma única reta.
+
+* Chamamos as retas que passam pela origem de [retas homogêneas]{.hl}. Na @fig-retas, só há uma reta homogênea (a reta $r$).
+
+* Mas, além de uma direção, um vetor também um [sentido]{.hl}.
+
+* Na @fig-retas, o vetor $\vetor w = -\ve1 - 2\ve2$ tem a mesma direção da reta $r$, mas seu sentido é oposto ao sentido do vetor $\vetor v$.
+
+* Então, [qual dos dois vetores $\vetor v$ e $\vetor w$ representa a reta $r$?]{.hl}
+
+* Vamos decidir esta questão do seguinte modo: [nossas retas também vão ter um sentido]{.hl}. Ou seja, vamos trabalhar com [retas orientadas]{.hl}.
+
+* Na @fig-retas, então, os vetores $\vetor v$ e $\vetor w$ representam duas retas $r$ e $r'$, ambas com a mesma direção, mas com sentidos opostos.
+
+* Mas, além de direção e sentido, um vetor também tem um [comprimento]{.hl} (ou [magnitude]{.hl}, ou [módulo]{.hl}, ou [norma]{.hl}).
+
+* Na @fig-vetores, os $3$ vetores $\vetor v_1, \vetor v_2$ e $\vetor v_3$ têm a mesma direção e sentido que a reta $r$.
+
+  ![Vetores de magnitudes diferentes](figures/reta-vetores.png){width=80% fig-alt="Retas e vetores paralelos, com módulos diferentes." #fig-vetores}
+
+* De novo, vamos combinar que [cada um destes vetores define uma reta diferente]{.hl}, todas as retas com a mesma direção e sentido, mas [cada reta com uma magnitude (ou peso) diferente]{.hl}.
+
+* Você pode imaginar o peso de uma reta como a [velocidade]{.hl} com que um ponto percorre a reta, ou como a [velocidade]{.hl} com que a reta avança na direção e no sentido especificados pelo vetor.
+
+
+::: {.callout-note}
+
+### Resumindo: vetores $=$ retas homogêneas orientadas e com peso
+
+Um vetor 
+$$
+\vetor v = a\ve1 + b\ve2
+$$
+(com $a, b \in \reais$, e com pelo menos um dentre $a$ e $b$ diferente de zero) [representa uma reta homogênea orientada, com a direção e o sentido de $\vetor v$, e com peso igual à norma de $\vetor v$:]{.hl} 
+$$
+||\vetor v|| = \sqrt{a^2 + b^2}
+$$
+
+:::
+
+
+## Vetores e retas em $\reais^3$ 
+
+* Tudo que falamos acima sobre vetores e retas em $\reais^2$ se aplica a vetores e retas em $\reais^3$, com as seguintes alterações:
+
+  * A base canônica agora é $\{ \ve1, \ve2, \ve3 \}$, onde os vetores correspondem aos eixos $x$, $y$ e $z$, respectivamente.
+  
+  * Logo, um vetor em $\reais^3$ é escrito como $\vetor v = x\ve1 + y\ve2 + z\ve3$, com $x, y, z \in \reais$.
+  
+  * Cada vetor $\vetor v = a\ve1 + b\ve2 + c\ve3$ (com $a, b, c \in \reais$, e com pelo menos um dentre $a$, $b$ e $c$ diferente de zero) representa uma reta homogênea orientada, com a direção e o sentido de $\vetor v$, e com peso igual à norma de $\vetor v$:
+    $$
+    ||\vetor v|| = \sqrt{a^2 + b^2 + c^2}
+    $$
+
+* A @fig-reta-r3 mostra um exemplo.
+
+  ![Vetor e reta em $\reais^3$](figures/reta-r3.png){width=100% fig-alt="Reta e vetor em R3." #fig-reta-r3}
+
+
+## Bivetores e planos em $\reais^3$
+
+
+## Bivetores em $\reais^2$?
+
+
+## Trivetores em $\reais^3$
+
+
+## $n + 1$-vetores em $\reais^n$?
+
+
+## Propriedades do produto externo
+
+
+## Resolvendo problemas com $\wedge$
+
+
+## Representando subespaços homogêneos orientados e com peso
+
+
+## *Blades*
+
+
+## Multivetores
+
+
+## Resumo
+
+
+## Exercícios
+
+
