@@ -80,9 +80,30 @@ ul.task-list{list-style: none;}
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Álgebra Geométrica para Ciência da Computação</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/fnaufel/AG-para-CC" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="./Álgebra-Geométrica-para-Ciência-da-Computação.pdf" title="Download PDF" class="sidebar-tool px-1"><i class="bi bi-file-pdf"></i></a>
+    <a href="./ag-para-cc.pdf" title="Download PDF" class="sidebar-tool px-1"><i class="bi bi-file-pdf"></i></a>
+    <a href="" title="Share" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+            <i class="bi bi-bi-twitter pe-1"></i>
+          Twitter
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+            <i class="bi bi-bi-facebook pe-1"></i>
+          Facebook
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+            <i class="bi bi-bi-linkedin pe-1"></i>
+          LinkedIn
+          </a>
+        </li>
+    </ul>
 </div>
     </div>
       </div>
@@ -173,8 +194,7 @@ ul.task-list{list-style: none;}
   \mathbf{v} = (-1, 3)\\
   \mathbf{w} = \left( \frac12, \frac{\sqrt{2}}{2} \right)
 \end{array}
-\]</span></p></li>
-</ul>
+\]</span></p>
 <div class="callout-warning callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -188,8 +208,7 @@ Notação: vetores em negrito
 <p>Você deve estar acostumado a escrever nomes de vetores como <span class="math inline">\(\vec v\)</span>, <span class="math inline">\(\vec w\)</span> etc.</p>
 <p>Neste livro, como na maioria dos livros sobre álgebra geométrica, nomes de vetores serão escritos em negrito: <span class="math inline">\(\mathbf{v}\)</span>, <span class="math inline">\(\mathbf{w}\)</span>.</p>
 </div>
-</div>
-<ul>
+</div></li>
 <li><p>Usando a base canônica de <span class="math inline">\(\mathbb{R}^2\)</span>, com <span class="math inline">\(\mathbf{e}_{1} = (1, 0)\)</span> e <span class="math inline">\(\mathbf{e}_{2} = (0, 1)\)</span>, os vetores do exemplo acima podem ser escritos como</p>
 <p><span class="math display">\[
 \begin{array}{l}
@@ -198,7 +217,14 @@ Notação: vetores em negrito
 \end{array}
 \]</span></p></li>
 <li><p>Tecnicamente, estamos escrevendo cada vetor como uma <span class="hl">combinação linear</span> dos vetores da base <span class="math inline">\(\{ \mathbf{e}_{1}, \mathbf{e}_{2} \}\)</span>.</p></li>
-</ul>
+<li><p>Para lembrar que estamos trabalhando com <span class="math inline">\(\mathbf{e}_{1}\)</span> e com <span class="math inline">\(\mathbf{e}_{2}\)</span>, vamos rotular os eixos <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> dos nossos gráficos com os nomes destes dois vetores, como na <a href="#fig-e1-e2">Figura&nbsp;<span>2.1</span></a>.</p></li>
+<li><p>Mas você deve se lembrar que <span class="math inline">\(\mathbf{e}_{1}\)</span> e <span class="math inline">\(\mathbf{e}_{2}\)</span> representam os dois vetores unitários da figura, e não os eixos orientados (que são infinitos).</p>
+<div id="fig-e1-e2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="figures/vetores-base.png" class="img-fluid figure-img" alt="Eixos e vetores da base canônica." style="width:70.0%"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figura 2.1: Vetores da base canônica e eixos</figcaption><p></p>
+</figure>
+</div>
 <div class="callout-warning callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -220,15 +246,6 @@ Notação: vetores como combinações lineares dos vetores da base
 \mathbf{u} = 3\mathbf{e}_{2}
 \]</span></p>
 </div>
-</div>
-<ul>
-<li><p>Para lembrar que estamos trabalhando com <span class="math inline">\(\mathbf{e}_{1}\)</span> e com <span class="math inline">\(\mathbf{e}_{2}\)</span>, vamos rotular os eixos <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> dos nossos gráficos com os nomes destes dois vetores, como na <a href="#fig-e1-e2">Figura&nbsp;<span>2.1</span></a>.</p></li>
-<li><p>Mas você deve se lembrar que <span class="math inline">\(\mathbf{e}_{1}\)</span> e <span class="math inline">\(\mathbf{e}_{2}\)</span> representam os dois vetores unitários da figura, e não os eixos orientados (que são infinitos).</p>
-<div id="fig-e1-e2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="figures/vetores-base.png" class="img-fluid figure-img" alt="Eixos e vetores da base canônica." style="width:70.0%"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figura 2.1: Vetores da base canônica e eixos</figcaption><p></p>
-</figure>
 </div></li>
 <li><p>Para acompanhar o restante deste capítulo, você deve revisar os seguintes tópicos sobre vetores, especialmente em <span class="math inline">\(\mathbb{R}^2\)</span> e em <span class="math inline">\(\mathbb{R}^3\)</span>:</p>
 <ul>
@@ -272,8 +289,7 @@ Notação: vetores como combinações lineares dos vetores da base
 </figure>
 </div></li>
 <li><p>De novo, vamos combinar que <span class="hl">cada um destes vetores define uma reta diferente</span>, todas as retas com a mesma direção e sentido, mas <span class="hl">cada reta com uma magnitude (ou peso) diferente</span>.</p></li>
-<li><p>Você pode imaginar o peso de uma reta como a <span class="hl">velocidade</span> com que um ponto percorre a reta, ou como a <span class="hl">velocidade</span> com que a reta avança na direção e no sentido especificados pelo vetor.</p></li>
-</ul>
+<li><p>Você pode imaginar o peso de uma reta como a <span class="hl">velocidade</span> com que um ponto percorre a reta, ou como a <span class="hl">velocidade</span> com que a reta avança na direção e no sentido especificados pelo vetor.</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -290,7 +306,8 @@ Resumindo: vetores <span class="math inline">\(=\)</span> retas homogêneas orie
 ||\mathbf{v}|| = \sqrt{a^2 + b^2}
 \]</span></p>
 </div>
-</div>
+</div></li>
+</ul>
 </section>
 <section id="vetores-e-retas-em-mathbbr3" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="vetores-e-retas-em-mathbbr3"><span class="header-section-number">2.3</span> Vetores e retas em <span class="math inline">\(\mathbb{R}^3\)</span></h2>

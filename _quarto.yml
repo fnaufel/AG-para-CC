@@ -6,11 +6,16 @@ book:
   title: "Álgebra Geométrica para Ciência da Computação"
   author: "Fernando Náufel"
   date: now
+  output-file: ag-para-cc
   search: true
   repo-url: https://github.com/fnaufel/AG-para-CC
   repo-actions: [edit]
   downloads: [pdf]
   date-format: "DD/MM/YYYY HH:mm"
+  sharing: 
+    - twitter
+    - facebook
+    - linkedin
   chapters:
     - index.qmd
     - intro.qmd
@@ -29,6 +34,13 @@ format:
       - _custom.scss
   pdf:
     documentclass: scrreprt
-
-
+    fig-pos: t
+    keep-tex: true
+    filters: 
+      - filters/dollar.py3
+      - filters/hl.py3
+    include-in-header: 
+      - _preamble.tex
+    include-before-body:  
+      - _before-body.tex
 
