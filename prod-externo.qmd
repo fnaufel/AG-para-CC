@@ -6,7 +6,7 @@
 
 ## Vetores em $\reais^2$ {#sec-vetores-r2}
 
-* Vamos trabalhar no espaço vetorial $\reais^2$.
+* Por enquanto, vamos trabalhar no espaço vetorial $\reais^2$.
 
 * Os elementos de $\reais^2$ são vetores com duas coordenadas; por exemplo:
 
@@ -139,6 +139,8 @@
 
 ## Vetores e retas em $\reais^3$ 
 
+* Agora, vamos trabalhar em $\reais^3$.
+
 * Tudo que falamos acima sobre vetores e retas em $\reais^2$ se aplica a vetores e retas em $\reais^3$, com as seguintes alterações:
 
   * A base canônica agora é $\{ \ve1, \ve2, \ve3 \}$, onde os vetores correspondem aos eixos $x$, $y$ e $z$, respectivamente.
@@ -157,7 +159,7 @@
 
 ## Bivetores e planos em $\reais^3$
 
-* Agora, em $\reais^3$, considere planos [homogêneos]{.hl} (que contêm a origem).
+* Agora, ainda em $\reais^3$, considere planos [homogêneos]{.hl} (que contêm a origem).
 
 * Um plano homogêneo neste espaço tridimensional é definido por dois vetores linearmente independentes (isto é, com direções diferentes).
 
@@ -165,7 +167,7 @@
 
   ![Plano homogêneo em $\reais^3$](figures/plano.jpg){width=100% fig-alt="Plano homogêneo em R3." #fig-plano}
 
-* Mas, como fizemos antes com as retas, [vamos querer levar em conta os sentidos e as normas]{.hl} destes dois vetores.
+* De novo, como fizemos antes com as retas, [vamos querer levar em conta os sentidos e as normas]{.hl} destes dois vetores na maneira como eles definem um plano.
 
 * Quanto aos sentidos: vamos dizer que o plano gerado por estes dois vetores pode ter [duas orientações]{.hl}, dependendo da [ordem em que tomarmos os vetores]{.hl}.
 
@@ -201,7 +203,7 @@
 
 * Mas [a forma desta área não é importante]{.hl}. As figuras mostram paralelogramos, mas os mesmos bivetores poderiam ser mostrados como círculos, triângulos etc. com a mesma área.
 
-* As figuras parecem diferenciar planos (que são infinitos) e bivetores (que têm, associados a eles, áreas finitas). Mais adiante, vamos ver que, em algumas aplicações, [podemos interpretar um bivetor como representando o plano no qual ele está contido]{.hl}; em outras aplicações, [podemos interpretar um bivetor como um subespaço do plano]{.hl}.
+* As figuras parecem diferenciar planos (que são infinitos) e bivetores (que têm, associados a eles, áreas finitas). Mais adiante, vamos ver que, em algumas aplicações, [podemos interpretar um bivetor como representando o plano no qual ele está contido]{.hl}; em outras aplicações, [podemos interpretar um bivetor como uma porção finita do plano]{.hl}.
 
 
 ## O produto externo de vetores cria bivetores
