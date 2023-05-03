@@ -193,7 +193,7 @@
 
 \title{Álgebra Geométrica para Ciência da Computação}
 \author{Fernando Náufel}
-\date{03/05/2023 13:20}
+\date{03/05/2023 18:05}
 
 \begin{document}
 \maketitle
@@ -201,7 +201,7 @@
 % Bold title in callout boxes
 \tcbset{fonttitle=\bfseries}
 
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, breakable, frame hidden, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, interior hidden, enhanced]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, interior hidden, enhanced, borderline west={3pt}{0pt}{shadecolor}, breakable, boxrule=0pt, frame hidden]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Índice}
 {
@@ -262,7 +262,7 @@ $\mathbb{R}^2$}{Vetores em }}\label{sec-vetores-r2}}
   \end{array}
   \]
 
-  \begin{tcolorbox}[standard jigsaw,title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Notação: vetores em negrito}, opacityback=0, colbacktitle=quarto-callout-warning-color!10!white, bottomrule=.15mm, left=2mm, toptitle=1mm, titlerule=0mm, arc=.35mm, coltitle=black, toprule=.15mm, rightrule=.15mm, colframe=quarto-callout-warning-color-frame, bottomtitle=1mm, colback=white, leftrule=.75mm, opacitybacktitle=0.6]
+  \begin{tcolorbox}[standard jigsaw,titlerule=0mm, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white, left=2mm, toptitle=1mm, arc=.35mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Notação: vetores em negrito}, rightrule=.15mm, bottomrule=.15mm, colframe=quarto-callout-warning-color-frame, opacitybacktitle=0.6, opacityback=0, colback=white, leftrule=.75mm, toprule=.15mm]
   Você deve estar acostumado a escrever nomes de vetores como $\vec v$,
   $\vec w$ etc.
 
@@ -303,7 +303,7 @@ $\mathbb{R}^2$}{Vetores em }}\label{sec-vetores-r2}}
 
   \end{figure}
 
-  \begin{tcolorbox}[standard jigsaw,title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Notação: vetores como combinações lineares dos vetores da base}, opacityback=0, colbacktitle=quarto-callout-warning-color!10!white, bottomrule=.15mm, left=2mm, toptitle=1mm, titlerule=0mm, arc=.35mm, coltitle=black, toprule=.15mm, rightrule=.15mm, colframe=quarto-callout-warning-color-frame, bottomtitle=1mm, colback=white, leftrule=.75mm, opacitybacktitle=0.6]
+  \begin{tcolorbox}[standard jigsaw,titlerule=0mm, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white, left=2mm, toptitle=1mm, arc=.35mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Notação: vetores como combinações lineares dos vetores da base}, rightrule=.15mm, bottomrule=.15mm, colframe=quarto-callout-warning-color-frame, opacitybacktitle=0.6, opacityback=0, colback=white, leftrule=.75mm, toprule=.15mm]
   Como na maioria dos livros sobre álgebra geométrica, em vez de
   escrevermos \[
   \mathbf{v} = (x, y)
@@ -319,9 +319,9 @@ $\mathbb{R}^2$}{Vetores em }}\label{sec-vetores-r2}}
   \]
   \end{tcolorbox}
 \item
-  Para acompanhar o restante deste capítulo, você deve revisar os
-  seguintes tópicos sobre vetores, especialmente em $\mathbb{R}^2$ e em
-  $\mathbb{R}^3$:
+  \protect\hypertarget{topicos-vetores}{}{} Para acompanhar o restante
+  deste capítulo, você deve revisar os seguintes tópicos sobre vetores,
+  especialmente em $\mathbb{R}^2$ e em $\mathbb{R}^3$:
 
   \begin{itemize}
   \tightlist
@@ -423,7 +423,7 @@ $\mathbb{R}^2$}{Retas em }}\label{retas-em-mathbbr2}}
   um ponto percorre a reta, ou como a {\hl{velocidade}} com que a reta
   avança na direção e no sentido especificados pelo vetor.
 
-  \begin{tcolorbox}[standard jigsaw,title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Resumindo: vetores \(=\) retas homogêneas orientadas e com peso}, opacityback=0, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, left=2mm, toptitle=1mm, titlerule=0mm, arc=.35mm, coltitle=black, toprule=.15mm, rightrule=.15mm, colframe=quarto-callout-note-color-frame, bottomtitle=1mm, colback=white, leftrule=.75mm, opacitybacktitle=0.6]
+  \begin{tcolorbox}[standard jigsaw,titlerule=0mm, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, left=2mm, toptitle=1mm, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Resumindo: vetores \(=\) retas homogêneas orientadas e com peso}, rightrule=.15mm, bottomrule=.15mm, colframe=quarto-callout-note-color-frame, opacitybacktitle=0.6, opacityback=0, colback=white, leftrule=.75mm, toprule=.15mm]
   Um vetor \[
   \mathbf{v} = a\mathbf{e}_{1} + b\mathbf{e}_{2}
   \] (com $a, b \in \mathbb{R}$, e com pelo menos um dentre $a$ e $b$
@@ -482,6 +482,150 @@ $\mathbb{R}^3$}{Vetores e retas em }}\label{vetores-e-retas-em-mathbbr3}}
 \section{\texorpdfstring{Bivetores e planos em
 $\mathbb{R}^3$}{Bivetores e planos em }}\label{bivetores-e-planos-em-mathbbr3}}
 
+\begin{itemize}
+\item
+  Agora, em $\mathbb{R}^3$, considere planos {\hl{homogêneos}} (que
+  contêm a origem).
+\item
+  Um plano homogêneo neste espaço tridimensional é definido por dois
+  vetores linearmente independentes (isto é, com direções diferentes).
+\item
+  Por exemplo, o plano da Figura~\ref{fig-plano} é definido pelos
+  vetores
+  $\mathbf{v} = \mathbf{e}_{1} + 2\mathbf{e}_{2} + \mathbf{e}_{3}$ e
+  $\mathbf{w} = 3\mathbf{e}_{1} - \mathbf{e}_{2}$.
+
+  \begin{figure}[t]
+
+  {\centering \includegraphics[width=1\textwidth,height=\textheight]{figures/plano.jpg}
+
+  }
+
+  \caption{\label{fig-plano}Plano homogêneo em $\mathbb{R}^3$}
+
+  \end{figure}
+\item
+  Mas, como fizemos antes com as retas, {\hl{vamos querer levar em conta
+  os sentidos e as normas}} destes dois vetores.
+\item
+  Quanto aos sentidos: vamos dizer que o plano gerado por estes dois
+  vetores pode ter {\hl{duas orientações}}, dependendo da {\hl{ordem em
+  que tomarmos os vetores}}.
+\item
+  Detalhando: o plano gerado por $\mathbf{v}$ e $\mathbf{w}$ (nesta
+  ordem) vai ter uma orientação, e o plano gerado por $\mathbf{w}$ e
+  $\mathbf{v}$ (nesta ordem) vai ter a orientação oposta.
+\item
+  Se você revisou os \protect\hyperlink{topicos-vetores}{tópicos
+  recomendados sobre vetores}, você deve estar lembrando que o
+  {\hl{produto vetorial}} tem um comportamento parecido:
+\item
+  Quando $\mathbf{v}$ e $\mathbf{w}$ são linearmente independentes, o
+  resultado do produto vetorial $\mathbf{v} \times \mathbf{w}$ é um
+  vetor {\hl{perpendicular}} ao plano definido por $\mathbf{v}$ e
+  $\mathbf{w}$.
+\item
+  O resultado do produto vetorial $\mathbf{v} \times \mathbf{w}$ é um
+  vetor que tem o {\hl{sentido oposto}} ao resultado do produto vetorial
+  $\mathbf{w} \times \mathbf{v}$. O sentido de cada resultado é dado
+  pela regra da mão direita.
+\item
+  Além disso, a {\hl{norma}} do produto vetorial
+  $\mathbf{v} \times \mathbf{w}$ --- que é igual à norma do produto
+  vetorial $\mathbf{w} \times \mathbf{v}$ --- tem o mesmo valor do que a
+  {\hl{área do paralelogramo}} definido por $\mathbf{v}$ e $\mathbf{w}$.
+  Veja a Figura~\ref{fig-prod-vet}.
+
+  \begin{figure}[t]
+
+  {\centering \includegraphics[width=1\textwidth,height=\textheight]{figures/prod-vet.jpg}
+
+  }
+
+  \caption{\label{fig-prod-vet}Produtos vetoriais}
+
+  \end{figure}
+\item
+  Com isto, temos tudo de que precisamos para definir planos homogêneos
+  que, além de direção, têm {\hl{peso}} (magnitude) e {\hl{orientação}}
+  (sentido):
+\item
+  O {\hl{peso}} do plano definido por $\mathbf{v}$ e $\mathbf{w}$ tem o
+  mesmo valor absoluto da {\hl{área do paralelogramo}}, com o sinal
+  positivo ou negativo, dependendo da regra da mão direita. Na
+  Figura~\ref{fig-prod-vet}, o peso do plano definido por $\mathbf{v}$ e
+  $\mathbf{w}$ (nesta ordem) é {\hl{negativo}}, e o peso do plano
+  definido por $\mathbf{w}$ e $\mathbf{v}$ (nesta ordem) é
+  {\hl{positivo}}.
+\item
+  A {\hl{orientação}} do plano definido por $\mathbf{v}$ e $\mathbf{w}$
+  (nesta ordem) é oposta à orientação do plano definido por $\mathbf{w}$
+  e $\mathbf{v}$ (nesta ordem).
+\item
+  {\hl{Vamos chamar de bivetor}} este plano homogêneo, orientado e com
+  peso.
+\item
+  A Figura~\ref{fig-bivetor-wv} mostra o bivetor definido por
+  $\mathbf{w}$ e $\mathbf{v}$ (nesta ordem). A orientação é dada por uma
+  seta circular.
+
+  \begin{figure}[t]
+
+  {\centering \includegraphics[width=1\textwidth,height=\textheight]{figures/bivetor-wv.jpg}
+
+  }
+
+  \caption{\label{fig-bivetor-wv}Bivetor definido por $\mathbf{w}$ e
+  $\mathbf{v}$ (nesta ordem)}
+
+  \end{figure}
+\item
+  A Figura~\ref{fig-bivetor-vw} mostra o bivetor definido por
+  $\mathbf{v}$ e $\mathbf{w}$ (nesta ordem). A orientação é oposta à do
+  bivetor na Figura~\ref{fig-bivetor-wv}.
+
+  \begin{figure}[t]
+
+  {\centering \includegraphics[width=1\textwidth,height=\textheight]{figures/bivetor-vw.jpg}
+
+  }
+
+  \caption{\label{fig-bivetor-vw}Bivetor definido por $\mathbf{v}$ e
+  $\mathbf{w}$ (nesta ordem)}
+
+  \end{figure}
+\item
+  Nas figuras, representamos um bivetor como uma {\hl{área orientada}}
+  em um plano.
+\item
+  Mas {\hl{a forma desta área não é importante}}. As figuras mostram
+  paralelogramos, mas os mesmos bivetores poderiam ser mostrados como
+  círculos, triângulos etc. com a mesma área.
+\item
+  As figuras parecem diferenciar planos (que são infinitos) e bivetores
+  (que têm, associados a eles, áreas finitas). Mais adiante, vamos ver
+  que, em algumas aplicações, {\hl{podemos interpretar um bivetor como
+  representando o plano no qual ele está contido}}; em outras
+  aplicações, {\hl{podemos interpretar um bivetor como um subespaço do
+  plano}}.
+\end{itemize}
+
+\hypertarget{o-produto-externo-de-vetores-cria-bivetores}{%
+\section{O produto externo de vetores cria
+bivetores}\label{o-produto-externo-de-vetores-cria-bivetores}}
+
+???
+
+Notação
+
+Antissimetria
+
+Vetores paralelos
+
+Distributividade
+
+Exemplos numéricos
+
 \hypertarget{bivetores-em-mathbbr2}{%
 \section{\texorpdfstring{Bivetores em
 $\mathbb{R}^2$?}{Bivetores em ?}}\label{bivetores-em-mathbbr2}}
@@ -490,9 +634,9 @@ $\mathbb{R}^2$?}{Bivetores em ?}}\label{bivetores-em-mathbbr2}}
 \section{\texorpdfstring{Trivetores em
 $\mathbb{R}^3$}{Trivetores em }}\label{trivetores-em-mathbbr3}}
 
-\hypertarget{n-1-vetores-em-mathbbrn}{%
-\section{\texorpdfstring{$n + 1$-vetores em
-$\mathbb{R}^n$?}{-vetores em ?}}\label{n-1-vetores-em-mathbbrn}}
+\hypertarget{k-vetores-em-mathbbrn}{%
+\section{\texorpdfstring{$k$-vetores em
+$\mathbb{R}^n$}{-vetores em }}\label{k-vetores-em-mathbbrn}}
 
 \hypertarget{propriedades-do-produto-externo}{%
 \section{Propriedades do produto

@@ -72,7 +72,7 @@
   :::
 
 
-* Para acompanhar o restante deste capítulo, você deve revisar os seguintes tópicos sobre vetores, especialmente em $\reais^2$ e em $\reais^3$:
+* []{#topicos-vetores} Para acompanhar o restante deste capítulo, você deve revisar os seguintes tópicos sobre vetores, especialmente em $\reais^2$ e em $\reais^3$:
 
   * Adição de vetores,
   * Multiplicação de vetor por escalar (nossos escalares vão ser números reais),
@@ -157,6 +157,67 @@
 
 ## Bivetores e planos em $\reais^3$
 
+* Agora, em $\reais^3$, considere planos [homogêneos]{.hl} (que contêm a origem).
+
+* Um plano homogêneo neste espaço tridimensional é definido por dois vetores linearmente independentes (isto é, com direções diferentes).
+
+* Por exemplo, o plano da @fig-plano é definido pelos vetores $\vetor v = \ve1 + 2\ve2 + \ve3$ e $\vetor w = 3\ve1 - \ve2$.
+
+  ![Plano homogêneo em $\reais^3$](figures/plano.jpg){width=100% fig-alt="Plano homogêneo em R3." #fig-plano}
+
+* Mas, como fizemos antes com as retas, [vamos querer levar em conta os sentidos e as normas]{.hl} destes dois vetores.
+
+* Quanto aos sentidos: vamos dizer que o plano gerado por estes dois vetores pode ter [duas orientações]{.hl}, dependendo da [ordem em que tomarmos os vetores]{.hl}.
+
+* Detalhando: o plano gerado por $\vetor v$ e $\vetor w$ (nesta ordem) vai ter uma orientação, e o plano gerado por $\vetor w$ e $\vetor v$ (nesta ordem) vai ter a orientação oposta.
+
+* Se você revisou os [tópicos recomendados sobre vetores](#topicos-vetores), você deve estar lembrando que o [produto vetorial]{.hl} tem um comportamento parecido: 
+
+* Quando $\vetor v$ e $\vetor w$ são linearmente independentes, o resultado do produto vetorial $\vetor v \times \vetor w$ é um vetor [perpendicular]{.hl} ao plano definido por $\vetor v$ e $\vetor w$.
+
+* O resultado do produto vetorial $\vetor v \times \vetor w$ é um vetor que tem o [sentido oposto]{.hl} ao resultado do produto vetorial $\vetor w \times \vetor v$. O sentido de cada resultado é dado pela regra da mão direita.
+
+* Além disso, a [norma]{.hl} do produto vetorial $\vetor v \times \vetor w$ --- que é igual à norma do produto vetorial $\vetor w \times \vetor v$ --- tem o mesmo valor do que a [área do paralelogramo]{.hl} definido por $\vetor v$ e $\vetor w$. Veja a @fig-prod-vet.
+  
+  ![Produtos vetoriais](figures/prod-vet.jpg){width=100% fig-alt="Produtos vetoriais." #fig-prod-vet}
+  
+* Com isto, temos tudo de que precisamos para definir planos homogêneos que, além de direção, têm [peso]{.hl} (magnitude) e [orientação]{.hl} (sentido):
+
+* O [peso]{.hl} do plano definido por $\vetor v$ e $\vetor w$ tem o mesmo valor absoluto da [área do paralelogramo ]{.hl}, com o sinal positivo ou negativo, dependendo da regra da mão direita. Na @fig-prod-vet, o peso do plano definido por $\vetor v$ e $\vetor w$ (nesta ordem) é [negativo]{.hl}, e o peso do plano definido por $\vetor w$ e $\vetor v$ (nesta ordem) é [positivo]{.hl}.
+
+* A [orientação]{.hl} do plano definido por $\vetor v$ e $\vetor w$ (nesta ordem) é oposta à orientação do plano definido por $\vetor w$ e $\vetor v$ (nesta ordem). 
+
+* [Vamos chamar de bivetor]{.hl} este plano homogêneo, orientado e com peso.
+
+* A @fig-bivetor-wv mostra o bivetor definido por $\vetor w$ e $\vetor v$ (nesta ordem). A orientação é dada por uma seta circular.
+
+  ![Bivetor definido por $\vetor w$ e $\vetor v$ (nesta ordem)](figures/bivetor-wv.jpg){width=100% fig-alt="Bivetor w e v." #fig-bivetor-wv}
+
+* A @fig-bivetor-vw mostra o bivetor definido por $\vetor v$ e $\vetor w$ (nesta ordem). A orientação é oposta à do bivetor na @fig-bivetor-wv.
+
+  ![Bivetor definido por $\vetor v$ e $\vetor w$ (nesta ordem)](figures/bivetor-vw.jpg){width=100% fig-alt="Bivetor v e w." #fig-bivetor-vw}
+  
+* Nas figuras, representamos um bivetor como uma [área orientada]{.hl} em um plano.
+
+* Mas [a forma desta área não é importante]{.hl}. As figuras mostram paralelogramos, mas os mesmos bivetores poderiam ser mostrados como círculos, triângulos etc. com a mesma área.
+
+* As figuras parecem diferenciar planos (que são infinitos) e bivetores (que têm, associados a eles, áreas finitas). Mais adiante, vamos ver que, em algumas aplicações, [podemos interpretar um bivetor como representando o plano no qual ele está contido]{.hl}; em outras aplicações, [podemos interpretar um bivetor como um subespaço do plano]{.hl}.
+
+
+## O produto externo de vetores cria bivetores
+
+???
+
+Notação
+
+Antissimetria
+
+Vetores paralelos
+
+Distributividade
+
+Exemplos numéricos
+
 
 ## Bivetores em $\reais^2$?
 
@@ -164,7 +225,7 @@
 ## Trivetores em $\reais^3$
 
 
-## $n + 1$-vetores em $\reais^n$?
+## $k$-vetores em $\reais^n$
 
 
 ## Propriedades do produto externo
