@@ -208,29 +208,111 @@
 
 ## O produto externo de vetores cria bivetores
 
-???
+* Agora podemos definir a operação que cria um bivetor a partir de dois vetores: [o produto externo, representado pelo símbolo $\wedge$]{.hl}.
 
-Notação
+* O bivetor da @fig-bivetor-wv é o resultado de $\vetor w \wedge \vetor v$.
 
-Antissimetria
+* O bivetor da @fig-bivetor-vw é o resultado de $\vetor v \wedge \vetor w$.
 
-Vetores paralelos
+* Nos exemplos da seção anterior, vimos que [a orientação e o peso do bivetor mudam de acordo com a ordem dos vetores]{.hl}. Então,
 
-Distributividade
+  $$
+  \vetor v \wedge \vetor w = -(\vetor w \wedge \vetor v)
+  $$
 
-Exemplos numéricos
+* Esta propriedade é chamada [antissimetria]{.hl}.
+
+* A antissimetria tem uma consequência interessante: [o produto externo entre um vetor e ele mesmo é o bivetor nulo]{.hl}:
+
+  $$
+  \vetor v \wedge \vetor v = -(\vetor v \wedge \vetor v) \iff \vetor v \wedge \vetor v = \vetor 0
+  $$
+
+* No produto $\vetor v \wedge \vetor w$, [se multiplicarmos um dos vetores por um escalar $\lambda$]{.hl}, [o peso]{.hl} (isto é, a área) do bivetor resultante [também será multiplicado por $\lambda$]{.hl}. Então,
+
+  $$
+  \lambda (\vetor v \wedge \vetor w) = \lambda\vetor v \wedge \vetor w = \vetor v \wedge \lambda\vetor w
+  $$
+
+* Esta propriedade é chamada [bilinearidade]{.hl}.
+
+* A bilinearidade nos permite escrever $\lambda (\vetor v \wedge \vetor w)$ sem os parênteses. Então, a antissimetria pode ser escrita como
+
+  $$
+  \vetor v \wedge \vetor w = -\vetor w \wedge \vetor v
+  $$
+
+* Uma consequência da bilinearidade é que [o produto externo de vetores paralelos é nulo]{.hl}. Se $\vetor w = \lambda \vetor v$, então
+
+  \begin{align*}
+    \vetor v \wedge \vetor w 
+    &= \vetor v \wedge \lambda \vetor v \\
+    &= \lambda\vetor v \wedge \vetor v \\
+    &= \lambda \vetor 0 \\
+    &= \vetor 0
+  \end{align*}
+
+* Finalmente, o produto externo distribui sobre a adição de vetores:
+
+  \begin{align*}
+    \vetor v \wedge (\vetor w + \vetor u) 
+    &= (\vetor v \wedge \vetor w) + (\vetor v \wedge \vetor u) \\
+    (\vetor v + \vetor w) \wedge \vetor u 
+    &= (\vetor v \wedge \vetor u) + (\vetor w \wedge \vetor u)
+  \end{align*}
+
+* ??? Guardar este exemplo para depois ??? Para um [exemplo numérico]{.hl}, considere os vetores da @fig-plano:
+
+  \begin{align*}
+    \vetor v &= \ve1 + 2\ve2 + \ve3 \\
+    \vetor w &= 3\ve1 - \ve2
+  \end{align*}
+
+  O produto externo $\vetor v \wedge \vetor w$ será
+  
+  \begin{align}
+    \vetor v \wedge \vetor w 
+    &= (\ve1 + 2\ve2 + \ve3) \wedge (3\ve1 - \ve2) \\
+    &= ((\ve1 + 2\ve2 + \ve3) \wedge 3\ve1) - ((\ve1 + 2\ve2 + \ve3) \wedge \ve2) \\
+    &= \underbrace{\ve1 \wedge 3\ve1}_{\vetor 0}
+    + 2\ve2 \wedge 3\ve1 
+    + \ve3 \wedge 3\ve1 
+    - (\ve1 \wedge \ve2 
+      + \underbrace{2\ve2 \wedge \ve2}_{\vetor 0} 
+      + \ve3 \wedge \ve2) \\
+    &= 2\ve2 \wedge 3\ve1 
+    + \ve3 \wedge 3\ve1 
+    - \ve1 \wedge \ve2 
+    - \ve3 \wedge \ve2 \\
+    &= 6\ve2 \wedge \ve1 
+    + 3\ve3 \wedge \ve1 
+    - \ve1 \wedge \ve2 
+    - \ve3 \wedge \ve2 \\
+    &= -6\ve1 \wedge \ve2 
+    + 3\ve3 \wedge \ve1 
+    - \ve1 \wedge \ve2 
+    + \ve2 \wedge \ve3 \\
+    &= -7\ve1 \wedge \ve2 
+    + \ve2 \wedge \ve3
+    + 3\ve3 \wedge \ve1 
+  \end{align}
+  
+  Observe que
+  
+  * A antepenúltima linha é o resultado de aplicar a bilinearidade à linha anterior, multiplicando os coeficientes dos vetores de um mesmo produto externo.
+  * A penúltima linha é o resultado de aplicar a antissimetria, mudando o sinal e a ordem dos fatores de $6\ve2 \wedge \ve1$.
+  * A última linha é o resultado de aplicar a distributividade.
+
+??? Exercícios???
 
 
-## Bivetores em $\reais^2$?
+## Soma de bivetores
 
 
 ## Trivetores em $\reais^3$
 
 
 ## $k$-vetores em $\reais^n$
-
-
-## Propriedades do produto externo
 
 
 ## Resolvendo problemas com $\wedge$
