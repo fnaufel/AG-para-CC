@@ -1,7 +1,7 @@
 
 ::: {.hidden}
 \providecommand{\reais}{\mathbb{R}}
-\providecommand{\vetor}[1]{\mathbf{#1}}
-\providecommand{\ve}[1]{\vetor{e}_{#1}}
+\providecommand{\vet}[1]{\mathbf{#1}}
+\providecommand{\ve}[1]{\vet{e}_{#1}}
 
 :::
