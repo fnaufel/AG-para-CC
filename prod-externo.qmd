@@ -162,7 +162,7 @@
 * A [área do paralelogramo]{.hl} definido pelos vetores $\vet v$ e $\vet w$ é
 
   $$
-  ||\vet v||\, ||\vet w|| \sen \theta
+  ||\vet v||\, ||\vet w|| \,\sen \theta
   $$
 
   onde $\theta$ é o ângulo entre $\vet v$ e $\vet w$.
@@ -191,7 +191,7 @@
   [O valor absoluto do peso do bivetor é dado por]{.hl}
 
   $$
-  ||\vet v||\, ||\vet w|| \sen \theta
+  ||\vet v||\, ||\vet w|| \,\sen \theta
   $$
   
   onde $\theta$ é o ângulo entre $\vet v$ e $\vet w$.
