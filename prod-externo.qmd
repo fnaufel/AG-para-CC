@@ -40,12 +40,14 @@
 
 * Tecnicamente, estamos escrevendo cada vetor como uma [combinação linear]{.hl} dos vetores da base $\{ \ve1, \ve2 \}$. 
 
+* Nesta seção e na próxima, para lembrar que estamos trabalhando com $\ve1$ e com $\ve2$, vamos rotular os eixos $x$ e $y$ dos nossos gráficos com os nomes destes dois vetores, como na @fig-e1-e2. 
 
-* Para lembrar que estamos trabalhando com $\ve1$ e com $\ve2$, vamos rotular os eixos $x$ e $y$ dos nossos gráficos com os nomes destes dois vetores, como na @fig-e1-e2.
+  ![Vetores da base canônica e eixos](figures/vetores-base.png){width=70% fig-alt="Eixos e vetores da base canônica." #fig-e1-e2}
 
 * Mas você deve se lembrar que $\ve1$ e $\ve2$ representam os dois vetores unitários da figura, e não os eixos orientados (que são infinitos).
 
-  ![Vetores da base canônica e eixos](figures/vetores-base.png){width=70% fig-alt="Eixos e vetores da base canônica." #fig-e1-e2}
+* Nas seções posteriores, não vamos mais mostrar os eixos nas figuras.
+
 
   ::: {.callout-warning}
   
@@ -84,7 +86,7 @@
   * Subespaços vetoriais.
   
 
-## Retas em $\reais^2$
+## Retas em $\reais^2$ {#sec-retas}
 
 * Por enquanto, só temos vetores.
 
@@ -139,13 +141,64 @@
 
 ## Bivetores em $\reais^2$
 
-* Vetores em $\reais^2$ correspondem a [comprimentos orientados]{.hl}.
+* Acabamos de ver que vetores em $\reais^2$ correspondem a [comprimentos orientados]{.hl}.
 
-* Agora vamos definir objetos em $\reais^2$ que correspondem a [áreas orientadas]{.hl}.
+* Agora, vamos definir objetos em $\reais^2$ que correspondem a [áreas orientadas]{.hl}.
 
-* Uma área orientada vai ser definida a partir de [dois vetores linearmente independentes]{.hl} (isto é, não paralelos).
+* Uma área orientada vai ser construída a partir de [dois vetores linearmente independentes]{.hl} (isto é, não paralelos).
 
-* Por exemplo, a @fig-area-r2 mostra a área orientada definida pelos vetores $\vet v = \ve1 + 2\ve2$ e $\vet w = 3\ve1 - \ve2$.
+* Por exemplo, a @fig-area-r2 mostra a área orientada definida pelos vetores $\vet v = \ve1 + 2\ve2$ e $\vet w = 3\ve1 - \ve2$ [(nesta ordem)]{.hl}. A orientação, indicada na figura pelo círculo com os raios, é no sentido horário.
+
+* [A orientação depende da ordem dos vetores]{.hl}. A @fig-area-r2-2 mostra a área orientada definida pelos [mesmos vetores]{.hl} $\vet w = 3\ve1 - \ve2$ e $\vet v = \ve1 + 2\ve2$, [na ordem inversa]{.hl} da @fig-area-r2. A orientação, agora, é no sentido anti-horário.
+
+  ![Área orientada definida por $\vet v$ e $\vet w$ (nesta ordem)](figures/fig-area-r2.png){width=60% fig-alt="Área orientada." #fig-area-r2}
+
+  ![Área orientada definida por $\vet w$ e $\vet v$ (nesta ordem)](figures/fig-area-r2-2.png){width=55% fig-alt="Área orientada." #fig-area-r2-2}
+
+* [Estas áreas orientadas são chamadas bivetores]{.hl}.
+
+* Um bivetor em $\reais^2$ tem, além da orientação, um [peso]{.hl}. [O valor absoluto do peso é a área correspondente ao bivetor]{.hl} --- isto é, a área do paralelogramo definido pelos vetores.
+
+* A [área do paralelogramo]{.hl} definido pelos vetores $\vet v$ e $\vet w$ é
+
+  $$
+  ||\vet v||\, ||\vet w|| \sen \theta
+  $$
+
+  onde $\theta$ é o ângulo entre $\vet v$ e $\vet w$.
+  
+* Esta área também pode ser calculada através de um determinante específico, usado no cálculo do [produto vetorial]{.hl} $\vet v \times \vet w$. Você vai relembrar isto no exercício ???.
+  
+* No exemplo da @fig-area-r2, o peso do bivetor é $-7$, se convencionarmos que a orientação no sentido horário corresponde a áreas negativas.
+
+* No exemplo da @fig-area-r2-2, o peso do bivetor é $7$, se convencionarmos que a orientação no sentido anti-horário corresponde a áreas positivas.
+
+* [Em $\reais^2$, a atitude (ou direção) de todo bivetor é a mesma]{.hl}, pois todos os bivetores estão no mesmo plano.
+
+* Então, assim como fizemos com os vetores (que associamos a retas orientadas e com peso na @sec-retas), [vamos associar a cada bivetor um plano (ou uma parte do plano) orientado e com peso]{.hl}.
+
+* [A forma e a posição da área correspondente a um bivetor não são importantes]{.hl}. As figuras mostram paralelogramos, mas os mesmos bivetores poderiam ser mostrados como círculos, triângulos etc. com a mesma área, em qualquer posição do plano.
+
+* As figuras parecem diferenciar o plano (que é infinito) e bivetores (que têm, associados a eles, áreas finitas). Mais adiante, vamos ver que, em algumas aplicações, [podemos interpretar um bivetor como representando o plano no qual ele está contido]{.hl}; em outras aplicações, [podemos interpretar um bivetor como uma porção finita do plano]{.hl}.
+
+
+  ::: {.callout-note}
+  
+  ### Resumindo: bivetores $=$ áreas orientadas e com peso
+  
+  Um bivetor definido pelos vetores $\vet v$ e $\vet w$ [representa uma área orientada e com peso no plano que contém $\vet v$ e $\vet w$]{.hl}.
+  
+  [O valor absoluto do peso do bivetor é dado por]{.hl}
+
+  $$
+  ||\vet v||\, ||\vet w|| \sen \theta
+  $$
+  
+  onde $\theta$ é o ângulo entre $\vet v$ e $\vet w$.
+  
+  O sinal do peso depende da orientação do bivetor, segundo a convenção adotada.
+  
+  :::
 
 
 ## O produto externo
@@ -174,56 +227,6 @@
   ![Vetor e reta em $\reais^3$](figures/reta-r3.png){width=100% fig-alt="Reta e vetor em R3." #fig-reta-r3}
 
 
-## Bivetores e planos em $\reais^3$
-
-??? Alterar: o produto externo já foi apresentado
-
-* Agora, ainda em $\reais^3$, considere planos [homogêneos]{.hl} (que contêm a origem).
-
-* Um plano homogêneo neste espaço tridimensional é definido por dois vetores linearmente independentes (isto é, com direções diferentes).
-
-* Por exemplo, o plano da @fig-plano é definido pelos vetores $\vet v = \ve1 + 2\ve2 + \ve3$ e $\vet w = 3\ve1 - \ve2$.
-
-  ![Plano homogêneo em $\reais^3$](figures/plano.jpg){width=100% fig-alt="Plano homogêneo em R3." #fig-plano}
-
-* De novo, como fizemos antes com as retas, [vamos querer levar em conta os sentidos e as normas]{.hl} destes dois vetores na maneira como eles definem um plano.
-
-* Quanto aos sentidos: vamos dizer que o plano gerado por estes dois vetores pode ter [duas orientações]{.hl}, dependendo da [ordem em que tomarmos os vetores]{.hl}.
-
-* Detalhando: o plano gerado por $\vet v$ e $\vet w$ (nesta ordem) vai ter uma orientação, e o plano gerado por $\vet w$ e $\vet v$ (nesta ordem) vai ter a orientação oposta.
-
-* Se você revisou os [tópicos recomendados sobre vetores](#topicos-vetores), você deve estar lembrando que o [produto vetorial]{.hl} tem um comportamento parecido: 
-
-* Quando $\vet v$ e $\vet w$ são linearmente independentes, o resultado do produto vetorial $\vet v \times \vet w$ é um vetor [perpendicular]{.hl} ao plano definido por $\vet v$ e $\vet w$.
-
-* O resultado do produto vetorial $\vet v \times \vet w$ é um vetor que tem o [sentido oposto]{.hl} ao resultado do produto vetorial $\vet w \times \vet v$. O sentido de cada resultado é dado pela regra da mão direita.
-
-* Além disso, a [norma]{.hl} do produto vetorial $\vet v \times \vet w$ --- que é igual à norma do produto vetorial $\vet w \times \vet v$ --- tem o mesmo valor do que a [área do paralelogramo]{.hl} definido por $\vet v$ e $\vet w$. Veja a @fig-prod-vet.
-  
-  ![Produtos vetoriais](figures/prod-vet.jpg){width=100% fig-alt="Produtos vetoriais." #fig-prod-vet}
-  
-* Com isto, temos tudo de que precisamos para definir planos homogêneos que, além de direção, têm [peso]{.hl} (magnitude) e [orientação]{.hl} (sentido):
-
-* O [peso]{.hl} do plano definido por $\vet v$ e $\vet w$ tem o mesmo valor absoluto da [área do paralelogramo ]{.hl}, com o sinal positivo ou negativo, dependendo da regra da mão direita. Na @fig-prod-vet, o peso do plano definido por $\vet v$ e $\vet w$ (nesta ordem) é [negativo]{.hl}, e o peso do plano definido por $\vet w$ e $\vet v$ (nesta ordem) é [positivo]{.hl}.
-
-* A [orientação]{.hl} do plano definido por $\vet v$ e $\vet w$ (nesta ordem) é oposta à orientação do plano definido por $\vet w$ e $\vet v$ (nesta ordem). 
-
-* [Vamos chamar de bivetor]{.hl} este plano homogêneo, orientado e com peso.
-
-* A @fig-bivetor-wv mostra o bivetor definido por $\vet w$ e $\vet v$ (nesta ordem). A orientação é dada por uma seta circular.
-
-  ![Bivetor definido por $\vet w$ e $\vet v$ (nesta ordem)](figures/bivetor-wv.jpg){width=100% fig-alt="Bivetor w e v." #fig-bivetor-wv}
-
-* A @fig-bivetor-vw mostra o bivetor definido por $\vet v$ e $\vet w$ (nesta ordem). A orientação é oposta à do bivetor na @fig-bivetor-wv.
-
-  ![Bivetor definido por $\vet v$ e $\vet w$ (nesta ordem)](figures/bivetor-vw.jpg){width=100% fig-alt="Bivetor v e w." #fig-bivetor-vw}
-  
-* Nas figuras, representamos um bivetor como uma [área orientada]{.hl} em um plano.
-
-* Mas [a forma desta área não é importante]{.hl}. As figuras mostram paralelogramos, mas os mesmos bivetores poderiam ser mostrados como círculos, triângulos etc. com a mesma área.
-
-* As figuras parecem diferenciar planos (que são infinitos) e bivetores (que têm, associados a eles, áreas finitas). Mais adiante, vamos ver que, em algumas aplicações, [podemos interpretar um bivetor como representando o plano no qual ele está contido]{.hl}; em outras aplicações, [podemos interpretar um bivetor como uma porção finita do plano]{.hl}.
-
 
 ## Trivetores e paralelepípedos em $\reais^3$
 
@@ -235,112 +238,7 @@
 
 ## Resumo
 
-
 ## Exercícios
 
-
-
-## Scratch
-
----
-
-## O produto externo de vetores cria bivetores
-
-* Agora podemos definir a operação que cria um bivetor a partir de dois vetores: [o produto externo, representado pelo símbolo $\wedge$]{.hl}.
-
-* O bivetor da @fig-bivetor-wv é o resultado de $\vet w \wedge \vet v$.
-
-* O bivetor da @fig-bivetor-vw é o resultado de $\vet v \wedge \vet w$.
-
-* Nos exemplos da seção anterior, vimos que [a orientação e o peso do bivetor mudam de acordo com a ordem dos vetores]{.hl}. Então,
-
-  $$
-  \vet v \wedge \vet w = -(\vet w \wedge \vet v)
-  $$
-
-* Esta propriedade é chamada [antissimetria]{.hl}.
-
-* A antissimetria tem uma consequência interessante: [o produto externo entre um vetor e ele mesmo é o bivetor nulo]{.hl}:
-
-  $$
-  \vet v \wedge \vet v = -(\vet v \wedge \vet v) \iff \vet v \wedge \vet v = \vet 0
-  $$
-
-* No produto $\vet v \wedge \vet w$, [se multiplicarmos um dos vetores por um escalar $\lambda$]{.hl}, [o peso]{.hl} (isto é, a área) do bivetor resultante [também será multiplicado por $\lambda$]{.hl}. Então,
-
-  $$
-  \lambda (\vet v \wedge \vet w) = \lambda\vet v \wedge \vet w = \vet v \wedge \lambda\vet w
-  $$
-
-* Esta propriedade é chamada [bilinearidade]{.hl}.
-
-* A bilinearidade nos permite escrever $\lambda (\vet v \wedge \vet w)$ sem os parênteses. Então, a antissimetria pode ser escrita como
-
-  $$
-  \vet v \wedge \vet w = -\vet w \wedge \vet v
-  $$
-
-* Uma consequência da bilinearidade é que [o produto externo de vetores paralelos é nulo]{.hl}. Se $\vet w = \lambda \vet v$, então
-
-  \begin{align*}
-    \vet v \wedge \vet w 
-    &= \vet v \wedge \lambda \vet v \\
-    &= \lambda\vet v \wedge \vet v \\
-    &= \lambda \vet 0 \\
-    &= \vet 0
-  \end{align*}
-
-* Finalmente, o produto externo distribui sobre a adição de vetores:
-
-  \begin{align*}
-    \vet v \wedge (\vet w + \vet u) 
-    &= (\vet v \wedge \vet w) + (\vet v \wedge \vet u) \\
-    (\vet v + \vet w) \wedge \vet u 
-    &= (\vet v \wedge \vet u) + (\vet w \wedge \vet u)
-  \end{align*}
-
-* ??? Guardar este exemplo para depois ??? Para um [exemplo numérico]{.hl}, considere os vetores da @fig-plano:
-
-  \begin{align*}
-    \vet v &= \ve1 + 2\ve2 + \ve3 \\
-    \vet w &= 3\ve1 - \ve2
-  \end{align*}
-
-  O produto externo $\vet v \wedge \vet w$ será
-  
-  \begin{align}
-    \vet v \wedge \vet w 
-    &= (\ve1 + 2\ve2 + \ve3) \wedge (3\ve1 - \ve2) \\
-    &= ((\ve1 + 2\ve2 + \ve3) \wedge 3\ve1) - ((\ve1 + 2\ve2 + \ve3) \wedge \ve2) \\
-    &= \underbrace{\ve1 \wedge 3\ve1}_{\vet 0}
-    + 2\ve2 \wedge 3\ve1 
-    + \ve3 \wedge 3\ve1 
-    - (\ve1 \wedge \ve2 
-      + \underbrace{2\ve2 \wedge \ve2}_{\vet 0} 
-      + \ve3 \wedge \ve2) \\
-    &= 2\ve2 \wedge 3\ve1 
-    + \ve3 \wedge 3\ve1 
-    - \ve1 \wedge \ve2 
-    - \ve3 \wedge \ve2 \\
-    &= 6\ve2 \wedge \ve1 
-    + 3\ve3 \wedge \ve1 
-    - \ve1 \wedge \ve2 
-    - \ve3 \wedge \ve2 \\
-    &= -6\ve1 \wedge \ve2 
-    + 3\ve3 \wedge \ve1 
-    - \ve1 \wedge \ve2 
-    + \ve2 \wedge \ve3 \\
-    &= -7\ve1 \wedge \ve2 
-    + \ve2 \wedge \ve3
-    + 3\ve3 \wedge \ve1 
-  \end{align}
-  
-  Observe que
-  
-  * A antepenúltima linha é o resultado de aplicar a bilinearidade à linha anterior, multiplicando os coeficientes dos vetores de um mesmo produto externo.
-  * A penúltima linha é o resultado de aplicar a antissimetria, mudando o sinal e a ordem dos fatores de $6\ve2 \wedge \ve1$.
-  * A última linha é o resultado de aplicar a distributividade.
-
-??? Exercícios???
 
 

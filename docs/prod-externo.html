@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-0.9.334">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,25 +11,19 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
-  vertical-align: middle;
-}
 </style>
-
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
+<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <link href="./references.html" rel="next">
 <link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -37,10 +31,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link id="quarto-text-highlighting-styles" href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -66,7 +60,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -145,25 +139,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc">
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#sec-vetores-r2" id="toc-sec-vetores-r2" class="nav-link active" data-scroll-target="#sec-vetores-r2"><span class="toc-section-number">2.1</span>  Vetores em <span class="math inline">\(\mathbb{R}^2\)</span></a></li>
-  <li><a href="#retas-em-mathbbr2" id="toc-retas-em-mathbbr2" class="nav-link" data-scroll-target="#retas-em-mathbbr2"><span class="toc-section-number">2.2</span>  Retas em <span class="math inline">\(\mathbb{R}^2\)</span></a></li>
-  <li><a href="#bivetores-em-mathbbr2" id="toc-bivetores-em-mathbbr2" class="nav-link" data-scroll-target="#bivetores-em-mathbbr2"><span class="toc-section-number">2.3</span>  Bivetores em <span class="math inline">\(\mathbb{R}^2\)</span></a></li>
-  <li><a href="#o-produto-externo" id="toc-o-produto-externo" class="nav-link" data-scroll-target="#o-produto-externo"><span class="toc-section-number">2.4</span>  O produto externo</a></li>
-  <li><a href="#o-espaço-vetorial-g2" id="toc-o-espaço-vetorial-g2" class="nav-link" data-scroll-target="#o-espaço-vetorial-g2"><span class="toc-section-number">2.5</span>  O espaço vetorial <span class="math inline">\(G(2)\)</span></a></li>
-  <li><a href="#vetores-e-retas-em-mathbbr3" id="toc-vetores-e-retas-em-mathbbr3" class="nav-link" data-scroll-target="#vetores-e-retas-em-mathbbr3"><span class="toc-section-number">2.6</span>  Vetores e retas em <span class="math inline">\(\mathbb{R}^3\)</span></a></li>
-  <li><a href="#bivetores-e-planos-em-mathbbr3" id="toc-bivetores-e-planos-em-mathbbr3" class="nav-link" data-scroll-target="#bivetores-e-planos-em-mathbbr3"><span class="toc-section-number">2.7</span>  Bivetores e planos em <span class="math inline">\(\mathbb{R}^3\)</span></a></li>
-  <li><a href="#trivetores-e-paralelepípedos-em-mathbbr3" id="toc-trivetores-e-paralelepípedos-em-mathbbr3" class="nav-link" data-scroll-target="#trivetores-e-paralelepípedos-em-mathbbr3"><span class="toc-section-number">2.8</span>  Trivetores e paralelepípedos em <span class="math inline">\(\mathbb{R}^3\)</span></a></li>
-  <li><a href="#o-espaço-vetorial-g3" id="toc-o-espaço-vetorial-g3" class="nav-link" data-scroll-target="#o-espaço-vetorial-g3"><span class="toc-section-number">2.9</span>  O espaço vetorial <span class="math inline">\(G(3)\)</span></a></li>
-  <li><a href="#representando-objetos-geométricos" id="toc-representando-objetos-geométricos" class="nav-link" data-scroll-target="#representando-objetos-geométricos"><span class="toc-section-number">2.10</span>  Representando objetos geométricos</a></li>
-  <li><a href="#resolvendo-problemas" id="toc-resolvendo-problemas" class="nav-link" data-scroll-target="#resolvendo-problemas"><span class="toc-section-number">2.11</span>  Resolvendo problemas</a></li>
-  <li><a href="#resumo" id="toc-resumo" class="nav-link" data-scroll-target="#resumo"><span class="toc-section-number">2.12</span>  Resumo</a></li>
-  <li><a href="#exercícios" id="toc-exercícios" class="nav-link" data-scroll-target="#exercícios"><span class="toc-section-number">2.13</span>  Exercícios</a></li>
-  <li><a href="#scratch" id="toc-scratch" class="nav-link" data-scroll-target="#scratch"><span class="toc-section-number">2.14</span>  Scratch</a></li>
-  <li><a href="#o-produto-externo-de-vetores-cria-bivetores" id="toc-o-produto-externo-de-vetores-cria-bivetores" class="nav-link" data-scroll-target="#o-produto-externo-de-vetores-cria-bivetores"><span class="toc-section-number">2.15</span>  O produto externo de vetores cria bivetores</a></li>
+  <li><a href="#sec-vetores-r2" id="toc-sec-vetores-r2" class="nav-link active" data-scroll-target="#sec-vetores-r2"> <span class="header-section-number">2.1</span> Vetores em <span class="math inline">\(\mathbb{R}^2\)</span></a></li>
+  <li><a href="#sec-retas" id="toc-sec-retas" class="nav-link" data-scroll-target="#sec-retas"> <span class="header-section-number">2.2</span> Retas em <span class="math inline">\(\mathbb{R}^2\)</span></a></li>
+  <li><a href="#bivetores-em-mathbbr2" id="toc-bivetores-em-mathbbr2" class="nav-link" data-scroll-target="#bivetores-em-mathbbr2"> <span class="header-section-number">2.3</span> Bivetores em <span class="math inline">\(\mathbb{R}^2\)</span></a></li>
+  <li><a href="#o-produto-externo" id="toc-o-produto-externo" class="nav-link" data-scroll-target="#o-produto-externo"> <span class="header-section-number">2.4</span> O produto externo</a></li>
+  <li><a href="#o-espaço-vetorial-g2" id="toc-o-espaço-vetorial-g2" class="nav-link" data-scroll-target="#o-espaço-vetorial-g2"> <span class="header-section-number">2.5</span> O espaço vetorial <span class="math inline">\(G(2)\)</span></a></li>
+  <li><a href="#vetores-e-retas-em-mathbbr3" id="toc-vetores-e-retas-em-mathbbr3" class="nav-link" data-scroll-target="#vetores-e-retas-em-mathbbr3"> <span class="header-section-number">2.6</span> Vetores e retas em <span class="math inline">\(\mathbb{R}^3\)</span></a></li>
+  <li><a href="#trivetores-e-paralelepípedos-em-mathbbr3" id="toc-trivetores-e-paralelepípedos-em-mathbbr3" class="nav-link" data-scroll-target="#trivetores-e-paralelepípedos-em-mathbbr3"> <span class="header-section-number">2.7</span> Trivetores e paralelepípedos em <span class="math inline">\(\mathbb{R}^3\)</span></a></li>
+  <li><a href="#o-espaço-vetorial-g3" id="toc-o-espaço-vetorial-g3" class="nav-link" data-scroll-target="#o-espaço-vetorial-g3"> <span class="header-section-number">2.8</span> O espaço vetorial <span class="math inline">\(G(3)\)</span></a></li>
+  <li><a href="#representando-objetos-geométricos" id="toc-representando-objetos-geométricos" class="nav-link" data-scroll-target="#representando-objetos-geométricos"> <span class="header-section-number">2.9</span> Representando objetos geométricos</a></li>
+  <li><a href="#resolvendo-problemas" id="toc-resolvendo-problemas" class="nav-link" data-scroll-target="#resolvendo-problemas"> <span class="header-section-number">2.10</span> Resolvendo problemas</a></li>
+  <li><a href="#resumo" id="toc-resumo" class="nav-link" data-scroll-target="#resumo"> <span class="header-section-number">2.11</span> Resumo</a></li>
+  <li><a href="#exercícios" id="toc-exercícios" class="nav-link" data-scroll-target="#exercícios"> <span class="header-section-number">2.12</span> Exercícios</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/fnaufel/AG-para-CC/edit/main/prod-externo.qmd" class="toc-action">Editar essa página</a></p></div></div></nav>
     </div>
@@ -177,10 +168,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+
+
 <div class="quarto-title-meta">
 
     
-  
     
   </div>
   
@@ -223,14 +215,15 @@ Notação: vetores em negrito
 \end{array}
 \]</span></p></li>
 <li><p>Tecnicamente, estamos escrevendo cada vetor como uma <span class="hl">combinação linear</span> dos vetores da base <span class="math inline">\(\{ \mathbf{e}_{1}, \mathbf{e}_{2} \}\)</span>.</p></li>
-<li><p>Para lembrar que estamos trabalhando com <span class="math inline">\(\mathbf{e}_{1}\)</span> e com <span class="math inline">\(\mathbf{e}_{2}\)</span>, vamos rotular os eixos <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> dos nossos gráficos com os nomes destes dois vetores, como na <a href="#fig-e1-e2">Figura&nbsp;<span>2.1</span></a>.</p></li>
-<li><p>Mas você deve se lembrar que <span class="math inline">\(\mathbf{e}_{1}\)</span> e <span class="math inline">\(\mathbf{e}_{2}\)</span> representam os dois vetores unitários da figura, e não os eixos orientados (que são infinitos).</p>
+<li><p>Nesta seção e na próxima, para lembrar que estamos trabalhando com <span class="math inline">\(\mathbf{e}_{1}\)</span> e com <span class="math inline">\(\mathbf{e}_{2}\)</span>, vamos rotular os eixos <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> dos nossos gráficos com os nomes destes dois vetores, como na <a href="#fig-e1-e2">Figura&nbsp;<span>2.1</span></a>.</p>
 <div id="fig-e1-e2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="figures/vetores-base.png" class="img-fluid figure-img" style="width:70.0%" alt="Eixos e vetores da base canônica."></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;2.1: Vetores da base canônica e eixos</figcaption><p></p>
+<p><img src="figures/vetores-base.png" class="img-fluid figure-img" alt="Eixos e vetores da base canônica." style="width:70.0%"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figura 2.1: Vetores da base canônica e eixos</figcaption><p></p>
 </figure>
-</div>
+</div></li>
+<li><p>Mas você deve se lembrar que <span class="math inline">\(\mathbf{e}_{1}\)</span> e <span class="math inline">\(\mathbf{e}_{2}\)</span> representam os dois vetores unitários da figura, e não os eixos orientados (que são infinitos).</p></li>
+<li><p>Nas seções posteriores, não vamos mais mostrar os eixos nas figuras.</p>
 <div class="callout-warning callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -266,16 +259,16 @@ Notação: vetores como combinações lineares dos vetores da base
 </ul></li>
 </ul>
 </section>
-<section id="retas-em-mathbbr2" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="retas-em-mathbbr2"><span class="header-section-number">2.2</span> Retas em <span class="math inline">\(\mathbb{R}^2\)</span></h2>
+<section id="sec-retas" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="sec-retas"><span class="header-section-number">2.2</span> Retas em <span class="math inline">\(\mathbb{R}^2\)</span></h2>
 <ul>
 <li><p>Por enquanto, só temos vetores.</p></li>
 <li><p>Cada vetor (diferente de <span class="math inline">\(\mathbf{0}\)</span>, o vetor nulo) indica uma direção.</p></li>
 <li><p>Mas apenas uma direção não basta para definir uma reta. Por exemplo, todas as retas da <a href="#fig-retas">Figura&nbsp;<span>2.2</span></a> têm a mesma direção: a direção dada pelo vetor <span class="math inline">\(\mathbf{v} = \mathbf{e}_{1} + 2\mathbf{e}_{2}\)</span>.</p>
 <div id="fig-retas" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="figures/reta-homogenea.png" class="img-fluid figure-img" style="width:80.0%" alt="Retas e vetores paralelos."></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;2.2: Retas e vetores</figcaption><p></p>
+<p><img src="figures/reta-homogenea.png" class="img-fluid figure-img" alt="Retas e vetores paralelos." style="width:80.0%"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figura 2.2: Retas e vetores</figcaption><p></p>
 </figure>
 </div></li>
 <li><p>Vamos combinar que <span class="hl">todas as nossas retas de interesse passam pela origem</span> — ou seja, pelo ponto <span class="math inline">\(O=(0,0)\)</span>.</p></li>
@@ -290,8 +283,8 @@ Notação: vetores como combinações lineares dos vetores da base
 <li><p>Na <a href="#fig-vetores">Figura&nbsp;<span>2.3</span></a>, os <span class="math inline">\(3\)</span> vetores <span class="math inline">\(\mathbf{v}_1, \mathbf{v}_2\)</span> e <span class="math inline">\(\mathbf{v}_3\)</span> têm a mesma direção e sentido que a reta <span class="math inline">\(r\)</span>.</p>
 <div id="fig-vetores" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="figures/reta-vetores.png" class="img-fluid figure-img" style="width:80.0%" alt="Retas e vetores paralelos, com módulos diferentes."></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;2.3: Vetores de magnitudes diferentes</figcaption><p></p>
+<p><img src="figures/reta-vetores.png" class="img-fluid figure-img" alt="Retas e vetores paralelos, com módulos diferentes." style="width:80.0%"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figura 2.3: Vetores de magnitudes diferentes</figcaption><p></p>
 </figure>
 </div></li>
 <li><p>De novo, vamos combinar que <span class="hl">cada um destes vetores define uma reta diferente</span>, todas as retas com a mesma direção e sentido, mas <span class="hl">cada reta com uma magnitude (ou peso) diferente</span>.</p></li>
@@ -317,7 +310,58 @@ Resumindo: vetores <span class="math inline">\(=\)</span> retas homogêneas orie
 </section>
 <section id="bivetores-em-mathbbr2" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="bivetores-em-mathbbr2"><span class="header-section-number">2.3</span> Bivetores em <span class="math inline">\(\mathbb{R}^2\)</span></h2>
-<p>??? Adaptar introdução feita em R3, abaixo.</p>
+<ul>
+<li><p>Acabamos de ver que vetores em <span class="math inline">\(\mathbb{R}^2\)</span> correspondem a <span class="hl">comprimentos orientados</span>.</p></li>
+<li><p>Agora, vamos definir objetos em <span class="math inline">\(\mathbb{R}^2\)</span> que correspondem a <span class="hl">áreas orientadas</span>.</p></li>
+<li><p>Uma área orientada vai ser construída a partir de <span class="hl">dois vetores linearmente independentes</span> (isto é, não paralelos).</p></li>
+<li><p>Por exemplo, a <a href="#fig-area-r2">Figura&nbsp;<span>2.4</span></a> mostra a área orientada definida pelos vetores <span class="math inline">\(\mathbf{v} = \mathbf{e}_{1} + 2\mathbf{e}_{2}\)</span> e <span class="math inline">\(\mathbf{w} = 3\mathbf{e}_{1} - \mathbf{e}_{2}\)</span> <span class="hl">(nesta ordem)</span>. A orientação, indicada na figura pelo círculo com os raios, é no sentido horário.</p></li>
+<li><p><span class="hl">A orientação depende da ordem dos vetores</span>. A <a href="#fig-area-r2-2">Figura&nbsp;<span>2.5</span></a> mostra a área orientada definida pelos <span class="hl">mesmos vetores</span> <span class="math inline">\(\mathbf{w} = 3\mathbf{e}_{1} - \mathbf{e}_{2}\)</span> e <span class="math inline">\(\mathbf{v} = \mathbf{e}_{1} + 2\mathbf{e}_{2}\)</span>, <span class="hl">na ordem inversa</span> da <a href="#fig-area-r2">Figura&nbsp;<span>2.4</span></a>. A orientação, agora, é no sentido anti-horário.</p>
+<div id="fig-area-r2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="figures/fig-area-r2.png" class="img-fluid figure-img" alt="Área orientada." style="width:60.0%"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figura 2.4: Área orientada definida por <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span> (nesta ordem)</figcaption><p></p>
+</figure>
+</div>
+<div id="fig-area-r2-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="figures/fig-area-r2-2.png" class="img-fluid figure-img" alt="Área orientada." style="width:55.0%"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figura 2.5: Área orientada definida por <span class="math inline">\(\mathbf{w}\)</span> e <span class="math inline">\(\mathbf{v}\)</span> (nesta ordem)</figcaption><p></p>
+</figure>
+</div></li>
+<li><p><span class="hl">Estas áreas orientadas são chamadas bivetores</span>.</p></li>
+<li><p>Um bivetor em <span class="math inline">\(\mathbb{R}^2\)</span> tem, além da orientação, um <span class="hl">peso</span>. <span class="hl">O valor absoluto do peso é a área correspondente ao bivetor</span> — isto é, a área do paralelogramo definido pelos vetores.</p></li>
+<li><p>A <span class="hl">área do paralelogramo</span> definido pelos vetores <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span> é</p>
+<p><span class="math display">\[
+||\mathbf{v}||\, ||\mathbf{w}|| \sen \theta
+\]</span></p>
+<p>onde <span class="math inline">\(\theta\)</span> é o ângulo entre <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span>.</p></li>
+<li><p>Esta área também pode ser calculada através de um determinante específico, usado no cálculo do <span class="hl">produto vetorial</span> <span class="math inline">\(\mathbf{v} \times \mathbf{w}\)</span>. Você vai relembrar isto no exercício ???.</p></li>
+<li><p>No exemplo da <a href="#fig-area-r2">Figura&nbsp;<span>2.4</span></a>, o peso do bivetor é <span class="math inline">\(-7\)</span>, se convencionarmos que a orientação no sentido horário corresponde a áreas negativas.</p></li>
+<li><p>No exemplo da <a href="#fig-area-r2-2">Figura&nbsp;<span>2.5</span></a>, o peso do bivetor é <span class="math inline">\(7\)</span>, se convencionarmos que a orientação no sentido anti-horário corresponde a áreas positivas.</p></li>
+<li><p><span class="hl">Em <span class="math inline">\(\mathbb{R}^2\)</span>, a atitude (ou direção) de todo bivetor é a mesma</span>, pois todos os bivetores estão no mesmo plano.</p></li>
+<li><p>Então, assim como fizemos com os vetores (que associamos a retas orientadas e com peso na <a href="#sec-retas">Seção&nbsp;<span>2.2</span></a>), <span class="hl">vamos associar a cada bivetor um plano (ou uma parte do plano) orientado e com peso</span>.</p></li>
+<li><p><span class="hl">A forma e a posição da área correspondente a um bivetor não são importantes</span>. As figuras mostram paralelogramos, mas os mesmos bivetores poderiam ser mostrados como círculos, triângulos etc. com a mesma área, em qualquer posição do plano.</p></li>
+<li><p>As figuras parecem diferenciar o plano (que é infinito) e bivetores (que têm, associados a eles, áreas finitas). Mais adiante, vamos ver que, em algumas aplicações, <span class="hl">podemos interpretar um bivetor como representando o plano no qual ele está contido</span>; em outras aplicações, <span class="hl">podemos interpretar um bivetor como uma porção finita do plano</span>.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Resumindo: bivetores <span class="math inline">\(=\)</span> áreas orientadas e com peso
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Um bivetor definido pelos vetores <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span> <span class="hl">representa uma área orientada e com peso no plano que contém <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span></span>.</p>
+<p><span class="hl">O valor absoluto do peso do bivetor é dado por</span></p>
+<p><span class="math display">\[
+||\mathbf{v}||\, ||\mathbf{w}|| \sen \theta
+\]</span></p>
+<p>onde <span class="math inline">\(\theta\)</span> é o ângulo entre <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span>.</p>
+<p>O sinal do peso depende da orientação do bivetor, segundo a convenção adotada.</p>
+</div>
+</div></li>
+</ul>
 </section>
 <section id="o-produto-externo" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="o-produto-externo"><span class="header-section-number">2.4</span> O produto externo</h2>
@@ -337,165 +381,32 @@ Resumindo: vetores <span class="math inline">\(=\)</span> retas homogêneas orie
 ||\mathbf{v}|| = \sqrt{a^2 + b^2 + c^2}
 \]</span></p></li>
 </ul></li>
-<li><p>A <a href="#fig-reta-r3">Figura&nbsp;<span>2.4</span></a> mostra um exemplo.</p>
+<li><p>A <a href="#fig-reta-r3">Figura&nbsp;<span>2.6</span></a> mostra um exemplo.</p>
 <div id="fig-reta-r3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="figures/reta-r3.png" class="img-fluid figure-img" style="width:100.0%" alt="Reta e vetor em R3."></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;2.4: Vetor e reta em <span class="math inline">\(\mathbb{R}^3\)</span></figcaption><p></p>
+<p><img src="figures/reta-r3.png" class="img-fluid figure-img" alt="Reta e vetor em R3." style="width:100.0%"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figura 2.6: Vetor e reta em <span class="math inline">\(\mathbb{R}^3\)</span></figcaption><p></p>
 </figure>
 </div></li>
 </ul>
 </section>
-<section id="bivetores-e-planos-em-mathbbr3" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="bivetores-e-planos-em-mathbbr3"><span class="header-section-number">2.7</span> Bivetores e planos em <span class="math inline">\(\mathbb{R}^3\)</span></h2>
-<p>??? Alterar: o produto externo já foi apresentado</p>
-<ul>
-<li><p>Agora, ainda em <span class="math inline">\(\mathbb{R}^3\)</span>, considere planos <span class="hl">homogêneos</span> (que contêm a origem).</p></li>
-<li><p>Um plano homogêneo neste espaço tridimensional é definido por dois vetores linearmente independentes (isto é, com direções diferentes).</p></li>
-<li><p>Por exemplo, o plano da <a href="#fig-plano">Figura&nbsp;<span>2.5</span></a> é definido pelos vetores <span class="math inline">\(\mathbf{v} = \mathbf{e}_{1} + 2\mathbf{e}_{2} + \mathbf{e}_{3}\)</span> e <span class="math inline">\(\mathbf{w} = 3\mathbf{e}_{1} - \mathbf{e}_{2}\)</span>.</p>
-<div id="fig-plano" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="figures/plano.jpg" class="img-fluid figure-img" style="width:100.0%" alt="Plano homogêneo em R3."></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;2.5: Plano homogêneo em <span class="math inline">\(\mathbb{R}^3\)</span></figcaption><p></p>
-</figure>
-</div></li>
-<li><p>De novo, como fizemos antes com as retas, <span class="hl">vamos querer levar em conta os sentidos e as normas</span> destes dois vetores na maneira como eles definem um plano.</p></li>
-<li><p>Quanto aos sentidos: vamos dizer que o plano gerado por estes dois vetores pode ter <span class="hl">duas orientações</span>, dependendo da <span class="hl">ordem em que tomarmos os vetores</span>.</p></li>
-<li><p>Detalhando: o plano gerado por <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span> (nesta ordem) vai ter uma orientação, e o plano gerado por <span class="math inline">\(\mathbf{w}\)</span> e <span class="math inline">\(\mathbf{v}\)</span> (nesta ordem) vai ter a orientação oposta.</p></li>
-<li><p>Se você revisou os <a href="#topicos-vetores">tópicos recomendados sobre vetores</a>, você deve estar lembrando que o <span class="hl">produto vetorial</span> tem um comportamento parecido:</p></li>
-<li><p>Quando <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span> são linearmente independentes, o resultado do produto vetorial <span class="math inline">\(\mathbf{v} \times \mathbf{w}\)</span> é um vetor <span class="hl">perpendicular</span> ao plano definido por <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span>.</p></li>
-<li><p>O resultado do produto vetorial <span class="math inline">\(\mathbf{v} \times \mathbf{w}\)</span> é um vetor que tem o <span class="hl">sentido oposto</span> ao resultado do produto vetorial <span class="math inline">\(\mathbf{w} \times \mathbf{v}\)</span>. O sentido de cada resultado é dado pela regra da mão direita.</p></li>
-<li><p>Além disso, a <span class="hl">norma</span> do produto vetorial <span class="math inline">\(\mathbf{v} \times \mathbf{w}\)</span> — que é igual à norma do produto vetorial <span class="math inline">\(\mathbf{w} \times \mathbf{v}\)</span> — tem o mesmo valor do que a <span class="hl">área do paralelogramo</span> definido por <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span>. Veja a <a href="#fig-prod-vet">Figura&nbsp;<span>2.6</span></a>.</p>
-<div id="fig-prod-vet" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="figures/prod-vet.jpg" class="img-fluid figure-img" style="width:100.0%" alt="Produtos vetoriais."></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;2.6: Produtos vetoriais</figcaption><p></p>
-</figure>
-</div></li>
-<li><p>Com isto, temos tudo de que precisamos para definir planos homogêneos que, além de direção, têm <span class="hl">peso</span> (magnitude) e <span class="hl">orientação</span> (sentido):</p></li>
-<li><p>O <span class="hl">peso</span> do plano definido por <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span> tem o mesmo valor absoluto da <span class="hl">área do paralelogramo</span>, com o sinal positivo ou negativo, dependendo da regra da mão direita. Na <a href="#fig-prod-vet">Figura&nbsp;<span>2.6</span></a>, o peso do plano definido por <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span> (nesta ordem) é <span class="hl">negativo</span>, e o peso do plano definido por <span class="math inline">\(\mathbf{w}\)</span> e <span class="math inline">\(\mathbf{v}\)</span> (nesta ordem) é <span class="hl">positivo</span>.</p></li>
-<li><p>A <span class="hl">orientação</span> do plano definido por <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span> (nesta ordem) é oposta à orientação do plano definido por <span class="math inline">\(\mathbf{w}\)</span> e <span class="math inline">\(\mathbf{v}\)</span> (nesta ordem).</p></li>
-<li><p><span class="hl">Vamos chamar de bivetor</span> este plano homogêneo, orientado e com peso.</p></li>
-<li><p>A <a href="#fig-bivetor-wv">Figura&nbsp;<span>2.7</span></a> mostra o bivetor definido por <span class="math inline">\(\mathbf{w}\)</span> e <span class="math inline">\(\mathbf{v}\)</span> (nesta ordem). A orientação é dada por uma seta circular.</p>
-<div id="fig-bivetor-wv" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="figures/bivetor-wv.jpg" class="img-fluid figure-img" style="width:100.0%" alt="Bivetor w e v."></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;2.7: Bivetor definido por <span class="math inline">\(\mathbf{w}\)</span> e <span class="math inline">\(\mathbf{v}\)</span> (nesta ordem)</figcaption><p></p>
-</figure>
-</div></li>
-<li><p>A <a href="#fig-bivetor-vw">Figura&nbsp;<span>2.8</span></a> mostra o bivetor definido por <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span> (nesta ordem). A orientação é oposta à do bivetor na <a href="#fig-bivetor-wv">Figura&nbsp;<span>2.7</span></a>.</p>
-<div id="fig-bivetor-vw" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="figures/bivetor-vw.jpg" class="img-fluid figure-img" style="width:100.0%" alt="Bivetor v e w."></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;2.8: Bivetor definido por <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span> (nesta ordem)</figcaption><p></p>
-</figure>
-</div></li>
-<li><p>Nas figuras, representamos um bivetor como uma <span class="hl">área orientada</span> em um plano.</p></li>
-<li><p>Mas <span class="hl">a forma desta área não é importante</span>. As figuras mostram paralelogramos, mas os mesmos bivetores poderiam ser mostrados como círculos, triângulos etc. com a mesma área.</p></li>
-<li><p>As figuras parecem diferenciar planos (que são infinitos) e bivetores (que têm, associados a eles, áreas finitas). Mais adiante, vamos ver que, em algumas aplicações, <span class="hl">podemos interpretar um bivetor como representando o plano no qual ele está contido</span>; em outras aplicações, <span class="hl">podemos interpretar um bivetor como uma porção finita do plano</span>.</p></li>
-</ul>
+<section id="trivetores-e-paralelepípedos-em-mathbbr3" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="trivetores-e-paralelepípedos-em-mathbbr3"><span class="header-section-number">2.7</span> Trivetores e paralelepípedos em <span class="math inline">\(\mathbb{R}^3\)</span></h2>
 </section>
-<section id="trivetores-e-paralelepípedos-em-mathbbr3" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="trivetores-e-paralelepípedos-em-mathbbr3"><span class="header-section-number">2.8</span> Trivetores e paralelepípedos em <span class="math inline">\(\mathbb{R}^3\)</span></h2>
+<section id="o-espaço-vetorial-g3" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="o-espaço-vetorial-g3"><span class="header-section-number">2.8</span> O espaço vetorial <span class="math inline">\(G(3)\)</span></h2>
 </section>
-<section id="o-espaço-vetorial-g3" class="level2" data-number="2.9">
-<h2 data-number="2.9" class="anchored" data-anchor-id="o-espaço-vetorial-g3"><span class="header-section-number">2.9</span> O espaço vetorial <span class="math inline">\(G(3)\)</span></h2>
+<section id="representando-objetos-geométricos" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="representando-objetos-geométricos"><span class="header-section-number">2.9</span> Representando objetos geométricos</h2>
 </section>
-<section id="representando-objetos-geométricos" class="level2" data-number="2.10">
-<h2 data-number="2.10" class="anchored" data-anchor-id="representando-objetos-geométricos"><span class="header-section-number">2.10</span> Representando objetos geométricos</h2>
+<section id="resolvendo-problemas" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="resolvendo-problemas"><span class="header-section-number">2.10</span> Resolvendo problemas</h2>
 </section>
-<section id="resolvendo-problemas" class="level2" data-number="2.11">
-<h2 data-number="2.11" class="anchored" data-anchor-id="resolvendo-problemas"><span class="header-section-number">2.11</span> Resolvendo problemas</h2>
+<section id="resumo" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="resumo"><span class="header-section-number">2.11</span> Resumo</h2>
 </section>
-<section id="resumo" class="level2" data-number="2.12">
-<h2 data-number="2.12" class="anchored" data-anchor-id="resumo"><span class="header-section-number">2.12</span> Resumo</h2>
-</section>
-<section id="exercícios" class="level2" data-number="2.13">
-<h2 data-number="2.13" class="anchored" data-anchor-id="exercícios"><span class="header-section-number">2.13</span> Exercícios</h2>
-</section>
-<section id="scratch" class="level2" data-number="2.14">
-<h2 data-number="2.14" class="anchored" data-anchor-id="scratch"><span class="header-section-number">2.14</span> Scratch</h2>
-<hr>
-</section>
-<section id="o-produto-externo-de-vetores-cria-bivetores" class="level2" data-number="2.15">
-<h2 data-number="2.15" class="anchored" data-anchor-id="o-produto-externo-de-vetores-cria-bivetores"><span class="header-section-number">2.15</span> O produto externo de vetores cria bivetores</h2>
-<ul>
-<li><p>Agora podemos definir a operação que cria um bivetor a partir de dois vetores: <span class="hl">o produto externo, representado pelo símbolo <span class="math inline">\(\wedge\)</span></span>.</p></li>
-<li><p>O bivetor da <a href="#fig-bivetor-wv">Figura&nbsp;<span>2.7</span></a> é o resultado de <span class="math inline">\(\mathbf{w} \wedge \mathbf{v}\)</span>.</p></li>
-<li><p>O bivetor da <a href="#fig-bivetor-vw">Figura&nbsp;<span>2.8</span></a> é o resultado de <span class="math inline">\(\mathbf{v} \wedge \mathbf{w}\)</span>.</p></li>
-<li><p>Nos exemplos da seção anterior, vimos que <span class="hl">a orientação e o peso do bivetor mudam de acordo com a ordem dos vetores</span>. Então,</p>
-<p><span class="math display">\[
-\mathbf{v} \wedge \mathbf{w} = -(\mathbf{w} \wedge \mathbf{v})
-\]</span></p></li>
-<li><p>Esta propriedade é chamada <span class="hl">antissimetria</span>.</p></li>
-<li><p>A antissimetria tem uma consequência interessante: <span class="hl">o produto externo entre um vetor e ele mesmo é o bivetor nulo</span>:</p>
-<p><span class="math display">\[
-\mathbf{v} \wedge \mathbf{v} = -(\mathbf{v} \wedge \mathbf{v}) \iff \mathbf{v} \wedge \mathbf{v} = \mathbf{0}
-\]</span></p></li>
-<li><p>No produto <span class="math inline">\(\mathbf{v} \wedge \mathbf{w}\)</span>, <span class="hl">se multiplicarmos um dos vetores por um escalar <span class="math inline">\(\lambda\)</span></span>, <span class="hl">o peso</span> (isto é, a área) do bivetor resultante <span class="hl">também será multiplicado por <span class="math inline">\(\lambda\)</span></span>. Então,</p>
-<p><span class="math display">\[
-\lambda (\mathbf{v} \wedge \mathbf{w}) = \lambda\mathbf{v} \wedge \mathbf{w} = \mathbf{v} \wedge \lambda\mathbf{w}
-\]</span></p></li>
-<li><p>Esta propriedade é chamada <span class="hl">bilinearidade</span>.</p></li>
-<li><p>A bilinearidade nos permite escrever <span class="math inline">\(\lambda (\mathbf{v} \wedge \mathbf{w})\)</span> sem os parênteses. Então, a antissimetria pode ser escrita como</p>
-<p><span class="math display">\[
-\mathbf{v} \wedge \mathbf{w} = -\mathbf{w} \wedge \mathbf{v}
-\]</span></p></li>
-<li><p>Uma consequência da bilinearidade é que <span class="hl">o produto externo de vetores paralelos é nulo</span>. Se <span class="math inline">\(\mathbf{w} = \lambda \mathbf{v}\)</span>, então</p>
-<p><span class="math display">\[\begin{align*}
-  \mathbf{v} \wedge \mathbf{w}
-  &amp;= \mathbf{v} \wedge \lambda \mathbf{v} \\
-  &amp;= \lambda\mathbf{v} \wedge \mathbf{v} \\
-  &amp;= \lambda \mathbf{0} \\
-  &amp;= \mathbf{0}
-\end{align*}\]</span></p></li>
-<li><p>Finalmente, o produto externo distribui sobre a adição de vetores:</p>
-<p><span class="math display">\[\begin{align*}
-  \mathbf{v} \wedge (\mathbf{w} + \mathbf{u})
-  &amp;= (\mathbf{v} \wedge \mathbf{w}) + (\mathbf{v} \wedge \mathbf{u}) \\
-  (\mathbf{v} + \mathbf{w}) \wedge \mathbf{u}
-  &amp;= (\mathbf{v} \wedge \mathbf{u}) + (\mathbf{w} \wedge \mathbf{u})
-\end{align*}\]</span></p></li>
-<li><p>??? Guardar este exemplo para depois ??? Para um <span class="hl">exemplo numérico</span>, considere os vetores da <a href="#fig-plano">Figura&nbsp;<span>2.5</span></a>:</p>
-<p><span class="math display">\[\begin{align*}
-  \mathbf{v} &amp;= \mathbf{e}_{1} + 2\mathbf{e}_{2} + \mathbf{e}_{3} \\
-  \mathbf{w} &amp;= 3\mathbf{e}_{1} - \mathbf{e}_{2}
-\end{align*}\]</span></p>
-<p>O produto externo <span class="math inline">\(\mathbf{v} \wedge \mathbf{w}\)</span> será</p>
-<p><span class="math display">\[\begin{align}
-  \mathbf{v} \wedge \mathbf{w}
-  &amp;= (\mathbf{e}_{1} + 2\mathbf{e}_{2} + \mathbf{e}_{3}) \wedge (3\mathbf{e}_{1} - \mathbf{e}_{2}) \\
-  &amp;= ((\mathbf{e}_{1} + 2\mathbf{e}_{2} + \mathbf{e}_{3}) \wedge 3\mathbf{e}_{1}) - ((\mathbf{e}_{1} + 2\mathbf{e}_{2} + \mathbf{e}_{3}) \wedge \mathbf{e}_{2}) \\
-  &amp;= \underbrace{\mathbf{e}_{1} \wedge 3\mathbf{e}_{1}}_{\mathbf{0}}
-  + 2\mathbf{e}_{2} \wedge 3\mathbf{e}_{1}
-  + \mathbf{e}_{3} \wedge 3\mathbf{e}_{1}
-  - (\mathbf{e}_{1} \wedge \mathbf{e}_{2}
-    + \underbrace{2\mathbf{e}_{2} \wedge \mathbf{e}_{2}}_{\mathbf{0}}
-    + \mathbf{e}_{3} \wedge \mathbf{e}_{2}) \\
-  &amp;= 2\mathbf{e}_{2} \wedge 3\mathbf{e}_{1}
-  + \mathbf{e}_{3} \wedge 3\mathbf{e}_{1}
-  - \mathbf{e}_{1} \wedge \mathbf{e}_{2}
-  - \mathbf{e}_{3} \wedge \mathbf{e}_{2} \\
-  &amp;= 6\mathbf{e}_{2} \wedge \mathbf{e}_{1}
-  + 3\mathbf{e}_{3} \wedge \mathbf{e}_{1}
-  - \mathbf{e}_{1} \wedge \mathbf{e}_{2}
-  - \mathbf{e}_{3} \wedge \mathbf{e}_{2} \\
-  &amp;= -6\mathbf{e}_{1} \wedge \mathbf{e}_{2}
-  + 3\mathbf{e}_{3} \wedge \mathbf{e}_{1}
-  - \mathbf{e}_{1} \wedge \mathbf{e}_{2}
-  + \mathbf{e}_{2} \wedge \mathbf{e}_{3} \\
-  &amp;= -7\mathbf{e}_{1} \wedge \mathbf{e}_{2}
-  + \mathbf{e}_{2} \wedge \mathbf{e}_{3}
-  + 3\mathbf{e}_{3} \wedge \mathbf{e}_{1}
-\end{align}\]</span></p>
-<p>Observe que</p>
-<ul>
-<li>A antepenúltima linha é o resultado de aplicar a bilinearidade à linha anterior, multiplicando os coeficientes dos vetores de um mesmo produto externo.</li>
-<li>A penúltima linha é o resultado de aplicar a antissimetria, mudando o sinal e a ordem dos fatores de <span class="math inline">\(6\mathbf{e}_{2} \wedge \mathbf{e}_{1}\)</span>.</li>
-<li>A última linha é o resultado de aplicar a distributividade.</li>
-</ul></li>
-</ul>
-<p>??? Exercícios???</p>
+<section id="exercícios" class="level2" data-number="2.12">
+<h2 data-number="2.12" class="anchored" data-anchor-id="exercícios"><span class="header-section-number">2.12</span> Exercícios</h2>
 
 
 </section>
@@ -503,24 +414,6 @@ Resumindo: vetores <span class="math inline">\(=\)</span> retas homogêneas orie
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -542,24 +435,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copiada");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copiada");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
     setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -587,50 +463,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      let href = ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
       });
-    }
+      return popup.innerHTML;
+    });
   }
 });
 </script>

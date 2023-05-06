@@ -34,7 +34,7 @@ function textinit() // the label parameters
 
 function fontsizeinit(resolution){
   switch (resolution) {
-  case 0: cmd("fontsize 24"); cprint("fontsize 24"); break;
+  case 0: cmd("fontsize 30"); cprint("fontsize 30"); break;
   case 1: cmd("fontsize 24"); cprint("fontsize 24"); break;
   case 2: cmd("fontsize 16"); cprint("fontsize 16"); break;
   case 3: cmd("fontsize 16"); cprint("fontsize 16"); break;
