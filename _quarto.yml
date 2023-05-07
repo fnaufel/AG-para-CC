@@ -34,7 +34,7 @@ format:
       - _custom.scss
   pdf:
     documentclass: scrreprt
-    fig-pos: t
+    fig-pos: htb
     keep-tex: true
     filters: 
       - filters/dollar.py3

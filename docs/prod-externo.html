@@ -189,8 +189,8 @@ ul.task-list{list-style: none;}
 <li><p>Os elementos de <span class="math inline">\(\mathbb{R}^2\)</span> são vetores com duas coordenadas; por exemplo:</p>
 <p><span class="math display">\[
 \begin{array}{l}
-  \mathbf{v} = (-1, 3)\\
-  \mathbf{w} = \left( \frac12, \frac{\sqrt{2}}{2} \right)
+  \mathbf{v} = (\frac12, 1)\\
+  \mathbf{w} = \left( -3, \frac{\sqrt{2}}{2} \right)
 \end{array}
 \]</span></p>
 <div class="callout-warning callout callout-style-default callout-captioned">
@@ -210,20 +210,17 @@ Notação: vetores em negrito
 <li><p>Usando a base canônica de <span class="math inline">\(\mathbb{R}^2\)</span>, com <span class="math inline">\(\mathbf{e}_{1} = (1, 0)\)</span> e <span class="math inline">\(\mathbf{e}_{2} = (0, 1)\)</span>, os vetores do exemplo acima podem ser escritos como</p>
 <p><span class="math display">\[
 \begin{array}{l}
-  \mathbf{v} = -1\mathbf{e}_{1} + 3\mathbf{e}_{2}\\
-  \mathbf{w} = \frac12 \mathbf{e}_{1} + \frac{\sqrt{2}}{2}\mathbf{e}_{2}
+  \mathbf{v} = \frac12\mathbf{e}_{1} + \mathbf{e}_{2}\\
+  \mathbf{w} = -3 \mathbf{e}_{1} + \frac{\sqrt{2}}{2}\mathbf{e}_{2}
 \end{array}
 \]</span></p></li>
-<li><p>Tecnicamente, estamos escrevendo cada vetor como uma <span class="hl">combinação linear</span> dos vetores da base <span class="math inline">\(\{ \mathbf{e}_{1}, \mathbf{e}_{2} \}\)</span>.</p></li>
-<li><p>Nesta seção e na próxima, para lembrar que estamos trabalhando com <span class="math inline">\(\mathbf{e}_{1}\)</span> e com <span class="math inline">\(\mathbf{e}_{2}\)</span>, vamos rotular os eixos <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> dos nossos gráficos com os nomes destes dois vetores, como na <a href="#fig-e1-e2">Figura&nbsp;<span>2.1</span></a>.</p>
+<li><p>Tecnicamente, estamos escrevendo cada vetor como uma <span class="hl">combinação linear</span> dos vetores da base <span class="math inline">\(\{ \mathbf{e}_{1}, \mathbf{e}_{2} \}\)</span>. Veja a <a href="#fig-e1-e2">Figura&nbsp;<span>2.1</span></a>.</p>
 <div id="fig-e1-e2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="figures/vetores-base.png" class="img-fluid figure-img" alt="Eixos e vetores da base canônica." style="width:70.0%"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figura 2.1: Vetores da base canônica e eixos</figcaption><p></p>
+<p><img src="figures/fig-eixos.png" class="img-fluid figure-img" alt="Vetores da base canônica." style="width:50.0%"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figura 2.1: Vetores da base canônica e vetor <span class="math inline">\(\mathbf{v} = \frac12\mathbf{e}_{1} + \mathbf{e}_{2}\)</span></figcaption><p></p>
 </figure>
-</div></li>
-<li><p>Mas você deve se lembrar que <span class="math inline">\(\mathbf{e}_{1}\)</span> e <span class="math inline">\(\mathbf{e}_{2}\)</span> representam os dois vetores unitários da figura, e não os eixos orientados (que são infinitos).</p></li>
-<li><p>Nas seções posteriores, não vamos mais mostrar os eixos nas figuras.</p>
+</div>
 <div class="callout-warning callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -267,7 +264,7 @@ Notação: vetores como combinações lineares dos vetores da base
 <li><p>Mas apenas uma direção não basta para definir uma reta. Por exemplo, todas as retas da <a href="#fig-retas">Figura&nbsp;<span>2.2</span></a> têm a mesma direção: a direção dada pelo vetor <span class="math inline">\(\mathbf{v} = \mathbf{e}_{1} + 2\mathbf{e}_{2}\)</span>.</p>
 <div id="fig-retas" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="figures/reta-homogenea.png" class="img-fluid figure-img" alt="Retas e vetores paralelos." style="width:80.0%"></p>
+<p><img src="figures/fig-retas.png" class="img-fluid figure-img" alt="Retas e vetores paralelos." style="width:70.0%"></p>
 <p></p><figcaption aria-hidden="true" class="figure-caption">Figura 2.2: Retas e vetores</figcaption><p></p>
 </figure>
 </div></li>
@@ -283,7 +280,7 @@ Notação: vetores como combinações lineares dos vetores da base
 <li><p>Na <a href="#fig-vetores">Figura&nbsp;<span>2.3</span></a>, os <span class="math inline">\(3\)</span> vetores <span class="math inline">\(\mathbf{v}_1, \mathbf{v}_2\)</span> e <span class="math inline">\(\mathbf{v}_3\)</span> têm a mesma direção e sentido que a reta <span class="math inline">\(r\)</span>.</p>
 <div id="fig-vetores" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="figures/reta-vetores.png" class="img-fluid figure-img" alt="Retas e vetores paralelos, com módulos diferentes." style="width:80.0%"></p>
+<p><img src="figures/fig-reta-vetores.png" class="img-fluid figure-img" alt="Retas e vetores paralelos, com módulos diferentes." style="width:70.0%"></p>
 <p></p><figcaption aria-hidden="true" class="figure-caption">Figura 2.3: Vetores de magnitudes diferentes</figcaption><p></p>
 </figure>
 </div></li>
@@ -299,9 +296,7 @@ Resumindo: vetores <span class="math inline">\(=\)</span> retas homogêneas orie
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Um vetor <span class="math display">\[
-\mathbf{v} = a\mathbf{e}_{1} + b\mathbf{e}_{2}
-\]</span> (com <span class="math inline">\(a, b \in \mathbb{R}\)</span>, e com pelo menos um dentre <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> diferente de zero) <span class="hl">representa uma reta homogênea orientada, com a direção e o sentido de <span class="math inline">\(\mathbf{v}\)</span>, e com peso igual à norma de <span class="math inline">\(\mathbf{v}\)</span>:</span> <span class="math display">\[
+<p>Um vetor <span class="math inline">\(\mathbf{v} = a\mathbf{e}_{1} + b\mathbf{e}_{2}\)</span> (com <span class="math inline">\(a, b \in \mathbb{R}\)</span>, e com pelo menos um dentre <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> diferente de zero) <span class="hl">representa uma reta homogênea orientada, com a direção e o sentido de <span class="math inline">\(\mathbf{v}\)</span>, e com peso igual à norma de <span class="math inline">\(\mathbf{v}\)</span>:</span> <span class="math display">\[
 ||\mathbf{v}|| = \sqrt{a^2 + b^2}
 \]</span></p>
 </div>

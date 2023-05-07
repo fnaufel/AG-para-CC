@@ -12,8 +12,8 @@
 
   $$
   \begin{array}{l}
-    \vet v = (-1, 3)\\
-    \vet w = \left( \frac12, \frac{\sqrt{2}}{2} \right)
+    \vet v = (\frac12, 1)\\
+    \vet w = \left( -3, \frac{\sqrt{2}}{2} \right)
   \end{array}
   $$
 
@@ -33,20 +33,14 @@
 
   $$
   \begin{array}{l}
-    \vet v = -1\ve1 + 3\ve2\\
-    \vet w = \frac12 \ve1 + \frac{\sqrt{2}}{2}\ve2
+    \vet v = \frac12\ve1 + \ve2\\
+    \vet w = -3 \ve1 + \frac{\sqrt{2}}{2}\ve2
   \end{array}
   $$
 
-* Tecnicamente, estamos escrevendo cada vetor como uma [combinação linear]{.hl} dos vetores da base $\{ \ve1, \ve2 \}$. 
+* Tecnicamente, estamos escrevendo cada vetor como uma [combinação linear]{.hl} dos vetores da base $\{ \ve1, \ve2 \}$. Veja a @fig-e1-e2.
 
-* Nesta seção e na próxima, para lembrar que estamos trabalhando com $\ve1$ e com $\ve2$, vamos rotular os eixos $x$ e $y$ dos nossos gráficos com os nomes destes dois vetores, como na @fig-e1-e2. 
-
-  ![Vetores da base canônica e eixos](figures/vetores-base.png){width=70% fig-alt="Eixos e vetores da base canônica." #fig-e1-e2}
-
-* Mas você deve se lembrar que $\ve1$ e $\ve2$ representam os dois vetores unitários da figura, e não os eixos orientados (que são infinitos).
-
-* Nas seções posteriores, não vamos mais mostrar os eixos nas figuras.
+  ![Vetores da base canônica e vetor $\vet v = \frac12\ve1 + \ve2$](figures/fig-eixos.png){width=50% fig-alt="Vetores da base canônica." #fig-e1-e2}
 
 
   ::: {.callout-warning}
@@ -94,7 +88,7 @@
 
 * Mas apenas uma direção não basta para definir uma reta. Por exemplo, todas as retas da @fig-retas têm a mesma direção: a direção dada pelo vetor $\vet v = \ve1 + 2\ve2$.
 
-  ![Retas e vetores](figures/reta-homogenea.png){width=80% fig-alt="Retas e vetores paralelos." #fig-retas}
+  ![Retas e vetores](figures/fig-retas.png){width=70% fig-alt="Retas e vetores paralelos." #fig-retas}
 
 * Vamos combinar que [todas as nossas retas de interesse passam pela origem]{.hl} --- ou seja, pelo ponto $O=(0,0)$. 
 
@@ -116,7 +110,7 @@
 
 * Na @fig-vetores, os $3$ vetores $\vet v_1, \vet v_2$ e $\vet v_3$ têm a mesma direção e sentido que a reta $r$.
 
-  ![Vetores de magnitudes diferentes](figures/reta-vetores.png){width=80% fig-alt="Retas e vetores paralelos, com módulos diferentes." #fig-vetores}
+  ![Vetores de magnitudes diferentes](figures/fig-reta-vetores.png){width=70% fig-alt="Retas e vetores paralelos, com módulos diferentes." #fig-vetores}
 
 * De novo, vamos combinar que [cada um destes vetores define uma reta diferente]{.hl}, todas as retas com a mesma direção e sentido, mas [cada reta com uma magnitude (ou peso) diferente]{.hl}.
 
@@ -127,11 +121,7 @@
   
   ### Resumindo: vetores $=$ retas homogêneas orientadas e com peso
   
-  Um vetor 
-  $$
-  \vet v = a\ve1 + b\ve2
-  $$
-  (com $a, b \in \reais$, e com pelo menos um dentre $a$ e $b$ diferente de zero) [representa uma reta homogênea orientada, com a direção e o sentido de $\vet v$, e com peso igual à norma de $\vet v$:]{.hl} 
+  Um vetor $\vet v = a\ve1 + b\ve2$ (com $a, b \in \reais$, e com pelo menos um dentre $a$ e $b$ diferente de zero) [representa uma reta homogênea orientada, com a direção e o sentido de $\vet v$, e com peso igual à norma de $\vet v$:]{.hl} 
   $$
   ||\vet v|| = \sqrt{a^2 + b^2}
   $$
