@@ -45,7 +45,7 @@ batch retas() {
     label(p1 + 0.1*e1 + 0.1*e2, "\eqn{O}");
     reta1 = show(blue((c3ga)(c3ga_point(p1)^v^ni)));
     posr = 0.5*v + 0.02*e1;
-    label(posr, "\blue{\eqn{r}}"));
+    label(posr, "\blue{\eqn{r}}");
 
     p2 = blue(c3ga_point(0.5*e1));
     reta2 = show(gray((c3ga)(c3ga_point(p2)^v^ni)));
@@ -92,12 +92,12 @@ batch retas2() {
     label(p1 + 0.1*e1 + 0.1*e2, "\eqn{O}");
     reta1 = show(blue((c3ga)(c3ga_point(p1)^v^ni)));
     posr = 0.5*v + 0.02*e1;
-    label(posr, "\blue{\eqn{r}}"));
+    label(posr, "\blue{\eqn{r}}");
     
 }
 
 
-batch fig_area_r2()
+batch areavw()
 {
     batch init();
     batch orient();
@@ -109,7 +109,7 @@ batch fig_area_r2()
     fontsizeinit(0);
 
     v = e1 + 2*e2;
-    w = 3*e1 - e2;
+    w = 3*e1 + e2;
 
     vw = show(alpha(blue(factored_bivector(v, w)), 0.2));
 
@@ -118,7 +118,7 @@ batch fig_area_r2()
     label(lv, "\eqn{\bold{v}}");
 
     ww = show(red(move_vector(w, v)));
-    lww = v + 0.3*normalize(v) + 0.5*w;
+    lww = 1.1*v + 0.3*normalize(v) + 0.5*w;
     label(lww, "\eqn{\bold{w}}");
 
     lbv = 0.5*(v+w);
@@ -126,7 +126,7 @@ batch fig_area_r2()
 }
 
 
-batch fig_area_r2_2()
+batch areawv()
 {
     batch init();
     batch orient();
@@ -138,7 +138,7 @@ batch fig_area_r2_2()
     fontsizeinit(0);
 
     v = e1 + 2*e2;
-    w = 3*e1 - e2;
+    w = 3*e1 + e2;
 
     vw = show(alpha(red(factored_bivector(w, v)), 0.2));
 
@@ -150,7 +150,7 @@ batch fig_area_r2_2()
     lw = 0.5*w - 0.2*e2;
     label(lw, "\eqn{\bold{w}}");
 
-    lbv = 0.5*(v+w);
+    lbv = 0.15*e2 + 0.45*(v+w);
     orient(lbv, w^v, 0.5, 0, 0, 0, 1);
 }
 

@@ -144,8 +144,12 @@ ul.task-list{list-style: none;}
    
   <ul>
   <li><a href="#sec-vetores-r2" id="toc-sec-vetores-r2" class="nav-link active" data-scroll-target="#sec-vetores-r2"> <span class="header-section-number">2.1</span> Vetores em <span class="math inline">\(\mathbb{R}^2\)</span></a></li>
-  <li><a href="#sec-retas" id="toc-sec-retas" class="nav-link" data-scroll-target="#sec-retas"> <span class="header-section-number">2.2</span> Retas em <span class="math inline">\(\mathbb{R}^2\)</span></a></li>
-  <li><a href="#bivetores-em-mathbbr2" id="toc-bivetores-em-mathbbr2" class="nav-link" data-scroll-target="#bivetores-em-mathbbr2"> <span class="header-section-number">2.3</span> Bivetores em <span class="math inline">\(\mathbb{R}^2\)</span></a></li>
+  <li><a href="#sec-retas" id="toc-sec-retas" class="nav-link" data-scroll-target="#sec-retas"> <span class="header-section-number">2.2</span> Retas orientadas em <span class="math inline">\(\mathbb{R}^2\)</span></a></li>
+  <li><a href="#bivetores-em-mathbbr2" id="toc-bivetores-em-mathbbr2" class="nav-link" data-scroll-target="#bivetores-em-mathbbr2"> <span class="header-section-number">2.3</span> Bivetores em <span class="math inline">\(\mathbb{R}^2\)</span></a>
+  <ul class="collapse">
+  <li><a href="#definição-e-exemplos" id="toc-definição-e-exemplos" class="nav-link" data-scroll-target="#definição-e-exemplos"> <span class="header-section-number">2.3.1</span> Definição e exemplos</a></li>
+  <li><a href="#adição-de-bivetores" id="toc-adição-de-bivetores" class="nav-link" data-scroll-target="#adição-de-bivetores"> <span class="header-section-number">2.3.2</span> Adição de bivetores</a></li>
+  </ul></li>
   <li><a href="#o-produto-externo" id="toc-o-produto-externo" class="nav-link" data-scroll-target="#o-produto-externo"> <span class="header-section-number">2.4</span> O produto externo</a></li>
   <li><a href="#o-espaço-vetorial-g2" id="toc-o-espaço-vetorial-g2" class="nav-link" data-scroll-target="#o-espaço-vetorial-g2"> <span class="header-section-number">2.5</span> O espaço vetorial <span class="math inline">\(G(2)\)</span></a></li>
   <li><a href="#vetores-e-retas-em-mathbbr3" id="toc-vetores-e-retas-em-mathbbr3" class="nav-link" data-scroll-target="#vetores-e-retas-em-mathbbr3"> <span class="header-section-number">2.6</span> Vetores e retas em <span class="math inline">\(\mathbb{R}^3\)</span></a></li>
@@ -257,7 +261,7 @@ Notação: vetores como combinações lineares dos vetores da base
 </ul>
 </section>
 <section id="sec-retas" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="sec-retas"><span class="header-section-number">2.2</span> Retas em <span class="math inline">\(\mathbb{R}^2\)</span></h2>
+<h2 data-number="2.2" class="anchored" data-anchor-id="sec-retas"><span class="header-section-number">2.2</span> Retas orientadas em <span class="math inline">\(\mathbb{R}^2\)</span></h2>
 <ul>
 <li><p>Por enquanto, só temos vetores.</p></li>
 <li><p>Cada vetor (diferente de <span class="math inline">\(\mathbf{0}\)</span>, o vetor nulo) indica uma direção.</p></li>
@@ -271,7 +275,7 @@ Notação: vetores como combinações lineares dos vetores da base
 <li><p>Vamos combinar que <span class="hl">todas as nossas retas de interesse passam pela origem</span> — ou seja, pelo ponto <span class="math inline">\(O=(0,0)\)</span>.</p></li>
 <li><p>Fazendo isto, cada vetor determina uma única reta.</p></li>
 <li><p>Chamamos as retas que passam pela origem de <span class="hl">retas homogêneas</span>. Na <a href="#fig-retas">Figura&nbsp;<span>2.2</span></a>, só há uma reta homogênea (a reta <span class="math inline">\(r\)</span>).</p></li>
-<li><p>Mas, além de uma direção, um vetor também um <span class="hl">sentido</span>.</p></li>
+<li><p>Mas, além de uma direção, um vetor tem também um <span class="hl">sentido</span>.</p></li>
 <li><p>Na <a href="#fig-retas">Figura&nbsp;<span>2.2</span></a>, o vetor <span class="math inline">\(\mathbf{w} = -\mathbf{e}_{1} - 2\mathbf{e}_{2}\)</span> tem a mesma direção da reta <span class="math inline">\(r\)</span>, mas seu sentido é oposto ao sentido do vetor <span class="math inline">\(\mathbf{v}\)</span>.</p></li>
 <li><p>Então, <span class="hl">qual dos dois vetores <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span> representa a reta <span class="math inline">\(r\)</span>?</span></p></li>
 <li><p>Vamos decidir esta questão do seguinte modo: <span class="hl">nossas retas também vão ter um sentido</span>. Ou seja, vamos trabalhar com <span class="hl">retas orientadas</span>.</p></li>
@@ -305,21 +309,23 @@ Resumindo: vetores <span class="math inline">\(=\)</span> retas homogêneas orie
 </section>
 <section id="bivetores-em-mathbbr2" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="bivetores-em-mathbbr2"><span class="header-section-number">2.3</span> Bivetores em <span class="math inline">\(\mathbb{R}^2\)</span></h2>
+<section id="definição-e-exemplos" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="definição-e-exemplos"><span class="header-section-number">2.3.1</span> Definição e exemplos</h3>
 <ul>
 <li><p>Acabamos de ver que vetores em <span class="math inline">\(\mathbb{R}^2\)</span> correspondem a <span class="hl">comprimentos orientados</span>.</p></li>
 <li><p>Agora, vamos definir objetos em <span class="math inline">\(\mathbb{R}^2\)</span> que correspondem a <span class="hl">áreas orientadas</span>.</p></li>
 <li><p>Uma área orientada vai ser construída a partir de <span class="hl">dois vetores linearmente independentes</span> (isto é, não paralelos).</p></li>
-<li><p>Por exemplo, a <a href="#fig-area-r2">Figura&nbsp;<span>2.4</span></a> mostra a área orientada definida pelos vetores <span class="math inline">\(\mathbf{v} = \mathbf{e}_{1} + 2\mathbf{e}_{2}\)</span> e <span class="math inline">\(\mathbf{w} = 3\mathbf{e}_{1} - \mathbf{e}_{2}\)</span> <span class="hl">(nesta ordem)</span>. A orientação, indicada na figura pelo círculo com os raios, é no sentido horário.</p></li>
-<li><p><span class="hl">A orientação depende da ordem dos vetores</span>. A <a href="#fig-area-r2-2">Figura&nbsp;<span>2.5</span></a> mostra a área orientada definida pelos <span class="hl">mesmos vetores</span> <span class="math inline">\(\mathbf{w} = 3\mathbf{e}_{1} - \mathbf{e}_{2}\)</span> e <span class="math inline">\(\mathbf{v} = \mathbf{e}_{1} + 2\mathbf{e}_{2}\)</span>, <span class="hl">na ordem inversa</span> da <a href="#fig-area-r2">Figura&nbsp;<span>2.4</span></a>. A orientação, agora, é no sentido anti-horário.</p>
+<li><p>Por exemplo, a <a href="#fig-area-r2">Figura&nbsp;<span>2.4</span></a> mostra a área orientada definida pelos vetores <span class="math inline">\(\mathbf{v} = \mathbf{e}_{1} + 2\mathbf{e}_{2}\)</span> e <span class="math inline">\(\mathbf{w} = 3\mathbf{e}_{1} + \mathbf{e}_{2}\)</span> <span class="hl">(nesta ordem)</span>. A orientação, indicada na figura pelo círculo com os raios, é no sentido horário.</p></li>
+<li><p><span class="hl">A orientação depende da ordem dos vetores</span>. A <a href="#fig-area-r2-2">Figura&nbsp;<span>2.5</span></a> mostra a área orientada definida pelos <span class="hl">mesmos vetores</span> <span class="math inline">\(\mathbf{w} = 3\mathbf{e}_{1} + \mathbf{e}_{2}\)</span> e <span class="math inline">\(\mathbf{v} = \mathbf{e}_{1} + 2\mathbf{e}_{2}\)</span>, <span class="hl">na ordem inversa</span> da <a href="#fig-area-r2">Figura&nbsp;<span>2.4</span></a>. A orientação, agora, é no sentido anti-horário.</p>
 <div id="fig-area-r2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="figures/fig-area-r2.png" class="img-fluid figure-img" alt="Área orientada." style="width:60.0%"></p>
+<p><img src="figures/fig-area-r2.png" class="img-fluid figure-img" alt="Área orientada." style="width:70.0%"></p>
 <p></p><figcaption aria-hidden="true" class="figure-caption">Figura 2.4: Área orientada definida por <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span> (nesta ordem)</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-area-r2-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="figures/fig-area-r2-2.png" class="img-fluid figure-img" alt="Área orientada." style="width:55.0%"></p>
+<p><img src="figures/fig-area-r2-2.png" class="img-fluid figure-img" alt="Área orientada." style="width:60.0%"></p>
 <p></p><figcaption aria-hidden="true" class="figure-caption">Figura 2.5: Área orientada definida por <span class="math inline">\(\mathbf{w}\)</span> e <span class="math inline">\(\mathbf{v}\)</span> (nesta ordem)</figcaption><p></p>
 </figure>
 </div></li>
@@ -331,8 +337,8 @@ Resumindo: vetores <span class="math inline">\(=\)</span> retas homogêneas orie
 \]</span></p>
 <p>onde <span class="math inline">\(\theta\)</span> é o ângulo entre <span class="math inline">\(\mathbf{v}\)</span> e <span class="math inline">\(\mathbf{w}\)</span>.</p></li>
 <li><p>Esta área também pode ser calculada através de um determinante específico, usado no cálculo do <span class="hl">produto vetorial</span> <span class="math inline">\(\mathbf{v} \times \mathbf{w}\)</span>. Você vai relembrar isto no exercício ???.</p></li>
-<li><p>No exemplo da <a href="#fig-area-r2">Figura&nbsp;<span>2.4</span></a>, o peso do bivetor é <span class="math inline">\(-7\)</span>, se convencionarmos que a orientação no sentido horário corresponde a áreas negativas.</p></li>
-<li><p>No exemplo da <a href="#fig-area-r2-2">Figura&nbsp;<span>2.5</span></a>, o peso do bivetor é <span class="math inline">\(7\)</span>, se convencionarmos que a orientação no sentido anti-horário corresponde a áreas positivas.</p></li>
+<li><p>No exemplo da <a href="#fig-area-r2">Figura&nbsp;<span>2.4</span></a>, o peso do bivetor é <span class="math inline">\(-5\)</span>, se convencionarmos que a orientação no sentido horário corresponde a áreas negativas.</p></li>
+<li><p>No exemplo da <a href="#fig-area-r2-2">Figura&nbsp;<span>2.5</span></a>, o peso do bivetor é <span class="math inline">\(5\)</span>, se convencionarmos que a orientação no sentido anti-horário corresponde a áreas positivas.</p></li>
 <li><p><span class="hl">Em <span class="math inline">\(\mathbb{R}^2\)</span>, a atitude (ou direção) de todo bivetor é a mesma</span>, pois todos os bivetores estão no mesmo plano.</p></li>
 <li><p>Então, assim como fizemos com os vetores (que associamos a retas orientadas e com peso na <a href="#sec-retas">Seção&nbsp;<span>2.2</span></a>), <span class="hl">vamos associar a cada bivetor um plano (ou uma parte do plano) orientado e com peso</span>.</p></li>
 <li><p><span class="hl">A forma e a posição da área correspondente a um bivetor não são importantes</span>. As figuras mostram paralelogramos, mas os mesmos bivetores poderiam ser mostrados como círculos, triângulos etc. com a mesma área, em qualquer posição do plano.</p></li>
@@ -357,6 +363,16 @@ Resumindo: bivetores <span class="math inline">\(=\)</span> áreas orientadas e 
 </div>
 </div></li>
 </ul>
+</section>
+<section id="adição-de-bivetores" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="adição-de-bivetores"><span class="header-section-number">2.3.2</span> Adição de bivetores</h3>
+<ul>
+<li><p>Em <span class="math inline">\(\mathbb{R}^2\)</span>, assim como podemos somar vetores, também podemos <span class="hl">somar bivetores</span>.</p></li>
+<li><p><span class="hl">O resultado vai ser um bivetor</span>.</p></li>
+<li><p>Como exemplo, considere o bivetor <span class="math inline">\(\mathbf{A}\)</span> definido pelos vetores <span class="math inline">\(\mathbf{v} = \mathbf{e}_{1} + 2\mathbf{e}_{2}\)</span> e <span class="math inline">\(\mathbf{w} = 3\mathbf{e}_{1} + \mathbf{e}_{2}\)</span>, nesta ordem.</p></li>
+<li><p>Considere também o bivetor <span class="math inline">\(\mathbf{B}\)</span> definido pelos vetores ???</p></li>
+</ul>
+</section>
 </section>
 <section id="o-produto-externo" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="o-produto-externo"><span class="header-section-number">2.4</span> O produto externo</h2>

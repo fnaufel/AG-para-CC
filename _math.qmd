@@ -3,5 +3,6 @@
 \providecommand{\reais}{\mathbb{R}}
 \providecommand{\sen}{\text{sen}\,}
 \providecommand{\vet}[1]{\mathbf{#1}}
+\providecommand{\biv}[1]{\mathbf{#1}}
 \providecommand{\ve}[1]{\vet{e}_{#1}}
 :::

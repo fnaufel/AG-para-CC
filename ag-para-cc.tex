@@ -194,7 +194,7 @@
 
 \title{Álgebra Geométrica para Ciência da Computação}
 \author{Fernando Náufel}
-\date{07/05/2023 15:35}
+\date{07/05/2023 17:27}
 
 \begin{document}
 \maketitle
@@ -202,7 +202,7 @@
 % Bold title in callout boxes
 \tcbset{fonttitle=\bfseries}
 
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, borderline west={3pt}{0pt}{shadecolor}, breakable, boxrule=0pt, enhanced, interior hidden, sharp corners]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, borderline west={3pt}{0pt}{shadecolor}, frame hidden, sharp corners, interior hidden, boxrule=0pt, breakable]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Índice}
 {
@@ -213,6 +213,7 @@
 \providecommand{\reais}{\mathbb{R}}
 \providecommand{\sen}{\text{sen}\,}
 \providecommand{\vet}[1]{\mathbf{#1}}
+\providecommand{\biv}[1]{\mathbf{#1}}
 \providecommand{\ve}[1]{\vet{e}_{#1}}
 
 \hypertarget{prefuxe1cio}{%
@@ -242,6 +243,7 @@ Playlists
 \providecommand{\reais}{\mathbb{R}}
 \providecommand{\sen}{\text{sen}\,}
 \providecommand{\vet}[1]{\mathbf{#1}}
+\providecommand{\biv}[1]{\mathbf{#1}}
 \providecommand{\ve}[1]{\vet{e}_{#1}}
 
 \hypertarget{sec-prod-ext}{%
@@ -265,7 +267,7 @@ $\mathbb{R}^2$}{Vetores em }}\label{sec-vetores-r2}}
   \end{array}
   \]
 
-  \begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Notação: vetores em negrito}, colframe=quarto-callout-warning-color-frame, opacitybacktitle=0.6, left=2mm, coltitle=black, rightrule=.15mm, titlerule=0mm, colback=white, colbacktitle=quarto-callout-warning-color!10!white, arc=.35mm, bottomrule=.15mm, toprule=.15mm, leftrule=.75mm, toptitle=1mm]
+  \begin{tcolorbox}[standard jigsaw,colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, bottomtitle=1mm, coltitle=black, titlerule=0mm, opacitybacktitle=0.6, arc=.35mm, toprule=.15mm, opacityback=0, bottomrule=.15mm, rightrule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, leftrule=.75mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Notação: vetores em negrito}, left=2mm]
   Você deve estar acostumado a escrever nomes de vetores como $\vec v$,
   $\vec w$ etc.
 
@@ -300,7 +302,7 @@ $\mathbb{R}^2$}{Vetores em }}\label{sec-vetores-r2}}
 
   \end{figure}
 
-  \begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Notação: vetores como combinações lineares dos vetores da base}, colframe=quarto-callout-warning-color-frame, opacitybacktitle=0.6, left=2mm, coltitle=black, rightrule=.15mm, titlerule=0mm, colback=white, colbacktitle=quarto-callout-warning-color!10!white, arc=.35mm, bottomrule=.15mm, toprule=.15mm, leftrule=.75mm, toptitle=1mm]
+  \begin{tcolorbox}[standard jigsaw,colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, bottomtitle=1mm, coltitle=black, titlerule=0mm, opacitybacktitle=0.6, arc=.35mm, toprule=.15mm, opacityback=0, bottomrule=.15mm, rightrule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, leftrule=.75mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Notação: vetores como combinações lineares dos vetores da base}, left=2mm]
   Como na maioria dos livros sobre álgebra geométrica, em vez de
   escrevermos \[
   \mathbf{v} = (x, y)
@@ -343,8 +345,8 @@ $\mathbb{R}^2$}{Vetores em }}\label{sec-vetores-r2}}
 \end{itemize}
 
 \hypertarget{sec-retas}{%
-\section{\texorpdfstring{Retas em
-$\mathbb{R}^2$}{Retas em }}\label{sec-retas}}
+\section{\texorpdfstring{Retas orientadas em
+$\mathbb{R}^2$}{Retas orientadas em }}\label{sec-retas}}
 
 \begin{itemize}
 \item
@@ -376,7 +378,7 @@ $\mathbb{R}^2$}{Retas em }}\label{sec-retas}}
   Chamamos as retas que passam pela origem de {\hl{retas homogêneas}}.
   Na Figura~\ref{fig-retas}, só há uma reta homogênea (a reta $r$).
 \item
-  Mas, além de uma direção, um vetor também um {\hl{sentido}}.
+  Mas, além de uma direção, um vetor tem também um {\hl{sentido}}.
 \item
   Na Figura~\ref{fig-retas}, o vetor
   $\mathbf{w} = -\mathbf{e}_{1} - 2\mathbf{e}_{2}$ tem a mesma direção
@@ -420,7 +422,7 @@ $\mathbb{R}^2$}{Retas em }}\label{sec-retas}}
   um ponto percorre a reta, ou como a {\hl{velocidade}} com que a reta
   avança na direção e no sentido especificados pelo vetor.
 
-  \begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Resumindo: vetores \(=\) retas homogêneas orientadas e com peso}, colframe=quarto-callout-note-color-frame, opacitybacktitle=0.6, left=2mm, coltitle=black, rightrule=.15mm, titlerule=0mm, colback=white, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, bottomrule=.15mm, toprule=.15mm, leftrule=.75mm, toptitle=1mm]
+  \begin{tcolorbox}[standard jigsaw,colframe=quarto-callout-note-color-frame, toptitle=1mm, colback=white, bottomtitle=1mm, coltitle=black, titlerule=0mm, opacitybacktitle=0.6, arc=.35mm, toprule=.15mm, opacityback=0, bottomrule=.15mm, rightrule=.15mm, colbacktitle=quarto-callout-note-color!10!white, leftrule=.75mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Resumindo: vetores \(=\) retas homogêneas orientadas e com peso}, left=2mm]
   Um vetor $\mathbf{v} = a\mathbf{e}_{1} + b\mathbf{e}_{2}$ (com
   $a, b \in \mathbb{R}$, e com pelo menos um dentre $a$ e $b$ diferente
   de zero) {\hl{representa uma reta homogênea orientada, com a direção e
@@ -435,6 +437,9 @@ $\mathbb{R}^2$}{Retas em }}\label{sec-retas}}
 \section{\texorpdfstring{Bivetores em
 $\mathbb{R}^2$}{Bivetores em }}\label{bivetores-em-mathbbr2}}
 
+\hypertarget{definiuxe7uxe3o-e-exemplos}{%
+\subsection{Definição e exemplos}\label{definiuxe7uxe3o-e-exemplos}}
+
 \begin{itemize}
 \item
   Acabamos de ver que vetores em $\mathbb{R}^2$ correspondem a
@@ -448,20 +453,20 @@ $\mathbb{R}^2$}{Bivetores em }}\label{bivetores-em-mathbbr2}}
 \item
   Por exemplo, a Figura~\ref{fig-area-r2} mostra a área orientada
   definida pelos vetores $\mathbf{v} = \mathbf{e}_{1} + 2\mathbf{e}_{2}$
-  e $\mathbf{w} = 3\mathbf{e}_{1} - \mathbf{e}_{2}$ {\hl{(nesta
+  e $\mathbf{w} = 3\mathbf{e}_{1} + \mathbf{e}_{2}$ {\hl{(nesta
   ordem)}}. A orientação, indicada na figura pelo círculo com os raios,
   é no sentido horário.
 \item
   {\hl{A orientação depende da ordem dos vetores}}. A
   Figura~\ref{fig-area-r2-2} mostra a área orientada definida pelos
-  {\hl{mesmos vetores}} $\mathbf{w} = 3\mathbf{e}_{1} - \mathbf{e}_{2}$
+  {\hl{mesmos vetores}} $\mathbf{w} = 3\mathbf{e}_{1} + \mathbf{e}_{2}$
   e $\mathbf{v} = \mathbf{e}_{1} + 2\mathbf{e}_{2}$, {\hl{na ordem
   inversa}} da Figura~\ref{fig-area-r2}. A orientação, agora, é no
   sentido anti-horário.
 
   \begin{figure}[htb]
 
-  {\centering \includegraphics[width=0.6\textwidth,height=\textheight]{figures/fig-area-r2.png}
+  {\centering \includegraphics[width=0.7\textwidth,height=\textheight]{figures/fig-area-r2.png}
 
   }
 
@@ -472,7 +477,7 @@ $\mathbb{R}^2$}{Bivetores em }}\label{bivetores-em-mathbbr2}}
 
   \begin{figure}[htb]
 
-  {\centering \includegraphics[width=0.55\textwidth,height=\textheight]{figures/fig-area-r2-2.png}
+  {\centering \includegraphics[width=0.6\textwidth,height=\textheight]{figures/fig-area-r2-2.png}
 
   }
 
@@ -501,11 +506,11 @@ $\mathbb{R}^2$}{Bivetores em }}\label{bivetores-em-mathbbr2}}
   $\mathbf{v} \times \mathbf{w}$. Você vai relembrar isto no exercício
   ???.
 \item
-  No exemplo da Figura~\ref{fig-area-r2}, o peso do bivetor é $-7$, se
+  No exemplo da Figura~\ref{fig-area-r2}, o peso do bivetor é $-5$, se
   convencionarmos que a orientação no sentido horário corresponde a
   áreas negativas.
 \item
-  No exemplo da Figura~\ref{fig-area-r2-2}, o peso do bivetor é $7$, se
+  No exemplo da Figura~\ref{fig-area-r2-2}, o peso do bivetor é $5$, se
   convencionarmos que a orientação no sentido anti-horário corresponde a
   áreas positivas.
 \item
@@ -528,7 +533,7 @@ $\mathbb{R}^2$}{Bivetores em }}\label{bivetores-em-mathbbr2}}
   aplicações, {\hl{podemos interpretar um bivetor como uma porção finita
   do plano}}.
 
-  \begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Resumindo: bivetores \(=\) áreas orientadas e com peso}, colframe=quarto-callout-note-color-frame, opacitybacktitle=0.6, left=2mm, coltitle=black, rightrule=.15mm, titlerule=0mm, colback=white, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, bottomrule=.15mm, toprule=.15mm, leftrule=.75mm, toptitle=1mm]
+  \begin{tcolorbox}[standard jigsaw,colframe=quarto-callout-note-color-frame, toptitle=1mm, colback=white, bottomtitle=1mm, coltitle=black, titlerule=0mm, opacitybacktitle=0.6, arc=.35mm, toprule=.15mm, opacityback=0, bottomrule=.15mm, rightrule=.15mm, colbacktitle=quarto-callout-note-color!10!white, leftrule=.75mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Resumindo: bivetores \(=\) áreas orientadas e com peso}, left=2mm]
   Um bivetor definido pelos vetores $\mathbf{v}$ e $\mathbf{w}$
   {\hl{representa uma área orientada e com peso no plano que contém
   $\mathbf{v}$ e $\mathbf{w}$}}.
@@ -544,6 +549,23 @@ $\mathbb{R}^2$}{Bivetores em }}\label{bivetores-em-mathbbr2}}
   O sinal do peso depende da orientação do bivetor, segundo a convenção
   adotada.
   \end{tcolorbox}
+\end{itemize}
+
+\hypertarget{adiuxe7uxe3o-de-bivetores}{%
+\subsection{Adição de bivetores}\label{adiuxe7uxe3o-de-bivetores}}
+
+\begin{itemize}
+\item
+  Em $\mathbb{R}^2$, assim como podemos somar vetores, também podemos
+  {\hl{somar bivetores}}.
+\item
+  {\hl{O resultado vai ser um bivetor}}.
+\item
+  Como exemplo, considere o bivetor $\mathbf{A}$ definido pelos vetores
+  $\mathbf{v} = \mathbf{e}_{1} + 2\mathbf{e}_{2}$ e
+  $\mathbf{w} = 3\mathbf{e}_{1} + \mathbf{e}_{2}$, nesta ordem.
+\item
+  Considere também o bivetor $\mathbf{B}$ definido pelos vetores ???
 \end{itemize}
 
 \hypertarget{o-produto-externo}{%
